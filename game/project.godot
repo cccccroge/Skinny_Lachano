@@ -11,7 +11,14 @@ config_version=3
 [application]
 
 config/name="Skinny Lachano"
+run/main_scene="res://level01/Chapter1.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/fullscreen=true
 
 [rendering]
 
