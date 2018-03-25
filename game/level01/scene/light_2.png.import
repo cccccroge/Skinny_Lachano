@@ -7,10 +7,10 @@ path="res://.import/light_2.png-38cfcd97c1531f0acff8361ca56e1557.stex"
 [deps]
 
 source_file="res://level01/scene/light_2.png"
-source_md5="557366a3c2e2b495f4a351000f4714bc"
+source_md5="8051e78a7343a56d82d58eff416e82ce"
 
 dest_files=[ "res://.import/light_2.png-38cfcd97c1531f0acff8361ca56e1557.stex" ]
-dest_md5="1e2e0056dd384628ed9b31b6c4462805"
+dest_md5="999947ce792cd0f44aa48a9350e08bfd"
 
 [params]
 

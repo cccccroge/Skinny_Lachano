@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://level01/scene/ground.png" type="Texture" id=1]
 [ext_resource path="res://level01/scene/ground_normal.png" type="Texture" id=2]
@@ -14,24 +14,12 @@ shader = ExtResource( 3 )
 shader_param/normal = ExtResource( 4 )
 _sections_unfolded = [ "shader_param" ]
 
-[sub_resource type="OccluderPolygon2D" id=2]
-
-closed = false
-cull_mode = 0
-polygon = PoolVector2Array( -5.54034, -21.1013, -5.54037, 78.2953, 5.5939, 78.1793, 5.36197, -21.6812 )
-
-[sub_resource type="ShaderMaterial" id=3]
+[sub_resource type="ShaderMaterial" id=2]
 
 render_priority = 0
 shader = ExtResource( 3 )
 
-[sub_resource type="OccluderPolygon2D" id=4]
-
-closed = true
-cull_mode = 0
-polygon = PoolVector2Array( -457.627, 84.023, -427.69, 85.8192, -424.097, 54.0862, 422.515, 52.8888, 426.706, 84.023, 457.84, 85.2205, 456.643, -86.0179, -452.837, -84.2217 )
-
-[node name="TilesetLaboratory" type="Node2D" index="0"]
+[node name="TilesetLaboratory" type="Node2D"]
 
 [node name="Ground_1" type="Sprite" parent="." index="0"]
 
@@ -45,23 +33,14 @@ _sections_unfolded = [ "Material" ]
 material = SubResource( 1 )
 position = Vector2( 310.598, 106.821 )
 texture = ExtResource( 5 )
+normal_map = ExtResource( 4 )
 _sections_unfolded = [ "Material" ]
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Wall_1" index="0"]
-
-occluder = SubResource( 2 )
-light_mask = 1
 
 [node name="Cabinet" type="Sprite" parent="." index="2"]
 
-material = SubResource( 3 )
+material = SubResource( 2 )
 position = Vector2( 577.993, 349.269 )
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Material" ]
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Cabinet" index="0"]
-
-occluder = SubResource( 4 )
-light_mask = 1
 
 

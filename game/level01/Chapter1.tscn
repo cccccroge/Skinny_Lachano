@@ -1,26 +1,13 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://level01/scene/TilesetLaboratory.tres" type="TileSet" id=1]
 [ext_resource path="res://level01/object/beaker.png" type="Texture" id=2]
 [ext_resource path="res://level01/object/ruler_and_scissor.png" type="Texture" id=3]
 [ext_resource path="res://level01/object/candle.png" type="Texture" id=4]
 [ext_resource path="res://level01/scene/light_2.png" type="Texture" id=5]
-[ext_resource path="res://level01/scene/pi_light.png" type="Texture" id=6]
-[ext_resource path="res://level01/scene/Light2D.gd" type="Script" id=7]
+[ext_resource path="res://level01/scene/Light2D.gd" type="Script" id=6]
 
-[sub_resource type="OccluderPolygon2D" id=5]
-
-closed = true
-cull_mode = 0
-polygon = PoolVector2Array( -113.94, 20.3248, -101.626, -12.644, -88.9153, -18.6023, -67.4657, -18.6023, -48.0022, -17.8079, -39.6606, -12.2468, -32.5108, -4.30255, -28.1414, 11.586, -19.0055, 11.1888, -2.71973, 11.1888, 6.81348, 17.9415, 17.9354, 24.6941, 27.0714, 39.3911, 31.0435, 27.4746, 41.3711, 28.269, 54.4792, 25.4885, 69.9706, 30.2551, 81.887, 31.8439, 92.6118, 30.2551, 114.856, 32.6384, 120.02, 39.7883, 123.197, 56.8685, 87.0508, 70.771, 58.8485, 69.5793, 34.6185, 64.4156, 21.1132, 62.8267, 10.3884, 70.771, -3.91138, 77.9208, -31.7164, 76.7292, -47.2078, 59.2518, -57.9325, 44.5548, -59.9186, 34.6245, -80.9709, 33.4328, -105.201, 29.0635 )
-
-[sub_resource type="OccluderPolygon2D" id=6]
-
-closed = true
-cull_mode = 0
-polygon = PoolVector2Array( -64.7257, 11.8868, -51.746, 13.1719, -39.2803, 11.7583, -24.7584, 10.0876, -13.8348, 9.05957, -9.46545, 8.15997, 17.1366, 28.4649, 47.0797, 47.9988, 52.9913, 49.798, 54.0194, 48.5128, 14.9517, 23.71, -8.18054, 5.97528, -32.3407, 8.67401, -51.7461, 10.7302 )
-
-[sub_resource type="ShaderMaterial" id=3]
+[sub_resource type="ShaderMaterial" id=1]
 
 render_priority = 0
 
@@ -74,23 +61,14 @@ _sections_unfolded = [ "Cell", "Transform" ]
 position = Vector2( 968.646, 872.912 )
 texture = ExtResource( 2 )
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="TileMap_surface/TileMap_object1/Beaker" index="0"]
-
-occluder = SubResource( 5 )
-light_mask = 1
-
 [node name="Ruler_and_scissor" type="Sprite" parent="TileMap_surface/TileMap_object1" index="1"]
 
 position = Vector2( 1181.16, 903.694 )
 texture = ExtResource( 3 )
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="TileMap_surface/TileMap_object1/Ruler_and_scissor" index="0"]
-
-occluder = SubResource( 6 )
-light_mask = 1
-
 [node name="Candle" type="Sprite" parent="TileMap_surface/TileMap_object1" index="2"]
 
+editor/display_folded = true
 position = Vector2( 1560.06, 881.78 )
 texture = ExtResource( 4 )
 _sections_unfolded = [ "Material" ]
@@ -111,7 +89,7 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = true
 draw_order = 0
-process_material = SubResource( 3 )
+process_material = SubResource( 1 )
 texture = null
 normal_map = null
 h_frames = 1
@@ -120,7 +98,6 @@ _sections_unfolded = [ "Process Material" ]
 
 [node name="Light_right" type="Light2D" parent="." index="1"]
 
-visible = false
 position = Vector2( 1299.67, 606.988 )
 enabled = true
 editor_only = false
@@ -150,11 +127,11 @@ _sections_unfolded = [ "Range", "Shadow" ]
 position = Vector2( 718.403, 1054.76 )
 enabled = true
 editor_only = false
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 offset = Vector2( 0, 0 )
 texture_scale = 3.0
 color = Color( 1, 1, 1, 1 )
-energy = 2.0
+energy = 1.5
 mode = 0
 range_height = 100.0
 range_z_min = -1024
@@ -169,12 +146,12 @@ shadow_gradient_length = 10.0
 shadow_filter = 4
 shadow_filter_smooth = 10.0
 shadow_item_cull_mask = 1
-script = ExtResource( 7 )
+script = ExtResource( 6 )
 _sections_unfolded = [ "Range", "Shadow" ]
 V = 10
 
 [node name="Default_light" type="CanvasModulate" parent="." index="3"]
 
-color = Color( 0.300781, 0.300781, 0.300781, 1 )
+color = Color( 0.664063, 0.664063, 0.664063, 1 )
 
 
