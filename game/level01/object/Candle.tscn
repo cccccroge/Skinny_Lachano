@@ -1,0 +1,165 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://level01/object/candle.png" type="Texture" id=1]
+[ext_resource path="res://level01/object/Candle.gd" type="Script" id=2]
+[ext_resource path="res://level01/object/flame.png" type="Texture" id=3]
+[ext_resource path="res://level01/object/small_light.png" type="Texture" id=4]
+[ext_resource path="res://level01/object/candle_light_animation.tres" type="Animation" id=5]
+
+[sub_resource type="Gradient" id=1]
+
+offsets = PoolRealArray( 0, 0.0866667, 0.353333, 0.536667, 0.853333, 0.936667, 1 )
+colors = PoolColorArray( 0.96875, 1, 0, 0, 0.866038, 0.889623, 0.134906, 1, 0.55, 0.55, 0.55, 1, 0.322556, 0.322556, 0.322556, 0.325961, 0.25, 0.25, 0.25, 0.451852, 0, 0, 0, 0.410775, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+
+flags = 4
+gradient = SubResource( 1 )
+width = 2048
+
+[sub_resource type="Curve" id=3]
+
+min_value = 0.0
+max_value = 5.0
+bake_resolution = 100
+_data = [ Vector2( 0.00391942, 0.566406 ), 0.0, 15.1456, 0, 0, Vector2( 0.114339, 1.96289 ), 5.55338, 5.55338, 0, 0, Vector2( 0.302938, 1.21094 ), -7.0148, -7.0148, 0, 0, Vector2( 0.849392, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.996887, 0 ), 0.0, 0.0, 1, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+
+flags = 4
+width = 2048
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+
+render_priority = 0
+trail_divisor = 1
+emission_shape = 0
+flag_align_y = false
+flag_rotate_y = false
+flag_disable_z = true
+spread = 10.0
+flatness = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 98.0
+initial_velocity_random = 0.2
+angular_velocity = 50.0
+angular_velocity_random = 0.2
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 0.0
+linear_accel_random = 0.0
+radial_accel = 0.0
+radial_accel_random = 0.0
+tangential_accel = 0.0
+tangential_accel_random = 0.0
+damping = 0.0
+damping_random = 0.0
+angle = 0.0
+angle_random = 0.0
+scale = 0.2
+scale_random = 0.1
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
+hue_variation = 0.1
+hue_variation_random = 0.5
+anim_speed = 0.0
+anim_speed_random = 0.0
+anim_offset = 0.0
+anim_offset_random = 0.0
+anim_loop = false
+_sections_unfolded = [ "Color", "Initial Velocity", "Scale", "Trail" ]
+
+[node name="Candle" type="Sprite"]
+
+position = Vector2( 1560.06, 881.78 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Material" ]
+
+[node name="Particles2D" type="Particles2D" parent="." index="0"]
+
+position = Vector2( -21.105, -15.4177 )
+rotation = -1.5708
+emitting = true
+amount = 50
+lifetime = 0.5
+one_shot = false
+preprocess = 3.0
+speed_scale = 0.4
+explosiveness = 0.0
+randomness = 0.5
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = true
+draw_order = 0
+process_material = SubResource( 5 )
+texture = ExtResource( 3 )
+normal_map = null
+h_frames = 1
+v_frames = 1
+_sections_unfolded = [ "Process Material", "Textures", "Time" ]
+
+[node name="Particles2D2" type="Particles2D" parent="." index="1"]
+
+position = Vector2( 16.425, -34.1827 )
+rotation = -1.5708
+emitting = true
+amount = 50
+lifetime = 0.5
+one_shot = false
+preprocess = 3.5
+speed_scale = 0.4
+explosiveness = 0.0
+randomness = 0.5
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = true
+draw_order = 0
+process_material = SubResource( 5 )
+texture = ExtResource( 3 )
+normal_map = null
+h_frames = 1
+v_frames = 1
+_sections_unfolded = [ "Process Material", "Textures", "Time" ]
+
+[node name="Light2D" type="Light2D" parent="." index="2"]
+
+position = Vector2( -1.51038, -20.3439 )
+enabled = true
+editor_only = false
+texture = ExtResource( 4 )
+offset = Vector2( 0, 0 )
+texture_scale = 0.7
+color = Color( 1, 0.296875, 0.296875, 1 )
+energy = 1.0
+mode = 0
+range_height = 100.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Range" ]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 0.1
+anims/candle_light = ExtResource( 5 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
+
+

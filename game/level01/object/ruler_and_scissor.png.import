@@ -7,10 +7,10 @@ path="res://.import/ruler_and_scissor.png-c9bae8836e2941ec6e2aa407918d41c0.stex"
 [deps]
 
 source_file="res://level01/object/ruler_and_scissor.png"
-source_md5="1ec56f7b7ea9a6e53ec35d7b273c2445"
+source_md5="b59d466181b9de76db4b108051ba8a08"
 
 dest_files=[ "res://.import/ruler_and_scissor.png-c9bae8836e2941ec6e2aa407918d41c0.stex" ]
-dest_md5="8238c97caea6d1a0925555ba41402db3"
+dest_md5="7188ceef91141f2e92afcdb228efb6bb"
 
 [params]
 

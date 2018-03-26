@@ -1,20 +1,17 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://level01/scene/TilesetLaboratory.tres" type="TileSet" id=1]
 [ext_resource path="res://level01/object/beaker.png" type="Texture" id=2]
 [ext_resource path="res://level01/object/ruler_and_scissor.png" type="Texture" id=3]
-[ext_resource path="res://level01/object/candle.png" type="Texture" id=4]
+[ext_resource path="res://level01/object/Candle.tscn" type="PackedScene" id=4]
 [ext_resource path="res://level01/scene/light_2.png" type="Texture" id=5]
 [ext_resource path="res://level01/scene/Light2D.gd" type="Script" id=6]
-
-[sub_resource type="ShaderMaterial" id=1]
-
-render_priority = 0
 
 [node name="Chapter1" type="Node2D" index="0"]
 
 [node name="TileMap_surface" type="TileMap" parent="." index="0"]
 
+editor/display_folded = true
 mode = 1
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 128, 100 )
@@ -58,47 +55,22 @@ _sections_unfolded = [ "Cell", "Transform" ]
 
 [node name="Beaker" type="Sprite" parent="TileMap_surface/TileMap_object1" index="0"]
 
-position = Vector2( 968.646, 872.912 )
+position = Vector2( 918.937, 882.323 )
 texture = ExtResource( 2 )
 
 [node name="Ruler_and_scissor" type="Sprite" parent="TileMap_surface/TileMap_object1" index="1"]
 
-position = Vector2( 1181.16, 903.694 )
+position = Vector2( 1108.63, 905.397 )
 texture = ExtResource( 3 )
 
-[node name="Candle" type="Sprite" parent="TileMap_surface/TileMap_object1" index="2"]
+[node name="Candle" parent="TileMap_surface/TileMap_object1" index="2" instance=ExtResource( 4 )]
 
-editor/display_folded = true
-position = Vector2( 1560.06, 881.78 )
-texture = ExtResource( 4 )
-_sections_unfolded = [ "Material" ]
-
-[node name="Particles2D" type="Particles2D" parent="TileMap_surface/TileMap_object1/Candle" index="0"]
-
-position = Vector2( -28.639, -12.9687 )
-emitting = true
-amount = 8
-lifetime = 1.0
-one_shot = false
-preprocess = 0.0
-speed_scale = 1.0
-explosiveness = 0.0
-randomness = 0.0
-fixed_fps = 0
-fract_delta = true
-visibility_rect = Rect2( -100, -100, 200, 200 )
-local_coords = true
-draw_order = 0
-process_material = SubResource( 1 )
-texture = null
-normal_map = null
-h_frames = 1
-v_frames = 1
-_sections_unfolded = [ "Process Material" ]
+position = Vector2( 1536.79, 885.104 )
 
 [node name="Light_right" type="Light2D" parent="." index="1"]
 
-position = Vector2( 1299.67, 606.988 )
+visible = false
+position = Vector2( 1296.88, 579.093 )
 enabled = true
 editor_only = false
 texture = ExtResource( 5 )
@@ -124,14 +96,15 @@ _sections_unfolded = [ "Range", "Shadow" ]
 
 [node name="Light2D" type="Light2D" parent="." index="2"]
 
-position = Vector2( 718.403, 1054.76 )
+visible = false
+position = Vector2( 286.028, 597.279 )
 enabled = true
 editor_only = false
 texture = ExtResource( 5 )
 offset = Vector2( 0, 0 )
 texture_scale = 3.0
 color = Color( 1, 1, 1, 1 )
-energy = 1.5
+energy = 1.0
 mode = 0
 range_height = 100.0
 range_z_min = -1024
@@ -152,6 +125,6 @@ V = 10
 
 [node name="Default_light" type="CanvasModulate" parent="." index="3"]
 
-color = Color( 0.664063, 0.664063, 0.664063, 1 )
+color = Color( 0.507813, 0.507813, 0.507813, 1 )
 
 

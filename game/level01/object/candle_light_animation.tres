@@ -1,0 +1,21 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+
+resource_name = "candle_light"
+length = 1.2
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Light2D:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0.296875, 0.296875, 1 ), Color( 1, 0.659424, 0.296875, 1 ), Color( 0.832031, 0.249574, 0.172256, 1 ), Color( 1, 0.992493, 0.519531, 1 ), Color( 1, 0.294118, 0.294118, 1 ) ]
+}
+

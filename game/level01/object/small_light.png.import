@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/beaker.png-bb678e5a329ee0442d2562227d90aab2.stex"
+path="res://.import/small_light.png-5ddd8c908339bd2159c03c1832c106e2.stex"
 
 [deps]
 
-source_file="res://level01/object/beaker.png"
-source_md5="db7bf439f870cdc304bfe1c7c7fdd835"
+source_file="res://level01/object/small_light.png"
+source_md5="557366a3c2e2b495f4a351000f4714bc"
 
-dest_files=[ "res://.import/beaker.png-bb678e5a329ee0442d2562227d90aab2.stex" ]
-dest_md5="1adb3eb8fb6c05cbcf6f8b31d3aeea95"
+dest_files=[ "res://.import/small_light.png-5ddd8c908339bd2159c03c1832c106e2.stex" ]
+dest_md5="1e2e0056dd384628ed9b31b6c4462805"
 
 [params]
 

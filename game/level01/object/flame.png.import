@@ -7,14 +7,14 @@ path="res://.import/flame.png-0ab42388f0201e4e589ecaabe271a7c8.stex"
 [deps]
 
 source_file="res://level01/object/flame.png"
-source_md5="2ef947fba2d96aa96aa8a7b9a89a5970"
+source_md5="175b849a0294e93677f3795821a5497c"
 
 dest_files=[ "res://.import/flame.png-0ab42388f0201e4e589ecaabe271a7c8.stex" ]
-dest_md5="1754562b00f33be136e2b4e3860247e7"
+dest_md5="f3b1c89c283d5746712df99ab52cc1c3"
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
