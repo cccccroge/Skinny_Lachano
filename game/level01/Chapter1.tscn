@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://level01/scene/TilesetLaboratory.tres" type="TileSet" id=1]
 [ext_resource path="res://level01/object/beaker.png" type="Texture" id=2]
@@ -6,12 +6,12 @@
 [ext_resource path="res://level01/object/Candle.tscn" type="PackedScene" id=4]
 [ext_resource path="res://level01/scene/light_2.png" type="Texture" id=5]
 [ext_resource path="res://level01/scene/Light2D.gd" type="Script" id=6]
+[ext_resource path="res://characters/Lachano/Lachano.tscn" type="PackedScene" id=7]
 
-[node name="Chapter1" type="Node2D" index="0"]
+[node name="Chapter1" type="Node2D"]
 
 [node name="TileMap_surface" type="TileMap" parent="." index="0"]
 
-editor/display_folded = true
 mode = 1
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 128, 100 )
@@ -126,5 +126,9 @@ V = 10
 [node name="Default_light" type="CanvasModulate" parent="." index="3"]
 
 color = Color( 0.507813, 0.507813, 0.507813, 1 )
+
+[node name="Lachano" parent="." index="4" instance=ExtResource( 7 )]
+
+frame = 31
 
 
