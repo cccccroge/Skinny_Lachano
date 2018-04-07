@@ -1,30 +1,29 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://level01/scene/ground.png" type="Texture" id=1]
-[ext_resource path="res://level01/scene/ground_normal.png" type="Texture" id=2]
-[ext_resource path="res://level01/scene/normal.shader" type="Shader" id=3]
-[ext_resource path="res://level01/scene/cabinet.png" type="Texture" id=4]
-[ext_resource path="res://level01/scene/wall_normal.png" type="Texture" id=5]
-[ext_resource path="res://level01/scene/wall.png" type="Texture" id=6]
+[ext_resource path="res://level01/scene/normal.shader" type="Shader" id=2]
+[ext_resource path="res://level01/scene/cabinet.png" type="Texture" id=3]
+[ext_resource path="res://level01/scene/wall_normal.png" type="Texture" id=4]
+[ext_resource path="res://level01/scene/wall.png" type="Texture" id=5]
 
-[sub_resource type="ShaderMaterial" id=8]
+[sub_resource type="ShaderMaterial" id=10]
 
 render_priority = 0
-shader = ExtResource( 3 )
+shader = ExtResource( 2 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=11]
 
 custom_solver_bias = 0.0
 extents = Vector2( 456.638, 51.9537 )
 
-[sub_resource type="ShaderMaterial" id=6]
+[sub_resource type="ShaderMaterial" id=8]
 
 render_priority = 0
-shader = ExtResource( 3 )
-shader_param/normal = ExtResource( 5 )
+shader = ExtResource( 2 )
+shader_param/normal = ExtResource( 4 )
 _sections_unfolded = [ "shader_param" ]
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=9]
 
 custom_solver_bias = 0.0
 extents = Vector2( 7.43326, 51.4038 )
@@ -35,14 +34,13 @@ extents = Vector2( 7.43326, 51.4038 )
 
 position = Vector2( 172.378, 125.448 )
 texture = ExtResource( 1 )
-normal_map = ExtResource( 2 )
 _sections_unfolded = [ "Material" ]
 
 [node name="Cabinet" type="Sprite" parent="." index="1"]
 
-material = SubResource( 8 )
+material = SubResource( 10 )
 position = Vector2( 577.993, 349.269 )
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 _sections_unfolded = [ "Material" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Cabinet" index="0"]
@@ -59,14 +57,14 @@ bounce = 0.0
 
 position = Vector2( -0.143433, 35.1973 )
 scale = Vector2( 1.00229, 1 )
-shape = SubResource( 9 )
+shape = SubResource( 11 )
 
 [node name="Wall_1" type="Sprite" parent="." index="2"]
 
-material = SubResource( 6 )
+material = SubResource( 8 )
 position = Vector2( 310, 110 )
-texture = ExtResource( 6 )
-normal_map = ExtResource( 5 )
+texture = ExtResource( 5 )
+normal_map = ExtResource( 4 )
 _sections_unfolded = [ "Material" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall_1" index="0"]
@@ -82,6 +80,6 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_1/StaticBody2D" index="0"]
 
 position = Vector2( -0.0256958, 24.8903 )
-shape = SubResource( 7 )
+shape = SubResource( 9 )
 
 
