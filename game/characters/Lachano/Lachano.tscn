@@ -341,9 +341,9 @@ animations = [ {
 
 custom_solver_bias = 0.0
 radius = 5.0
-height = 45.0
+height = 55.3292
 
-[node name="Lachano" type="KinematicBody2D" index="0"]
+[node name="Lachano" type="KinematicBody2D"]
 
 position = Vector2( 964.204, 527.59 )
 input_pickable = false
@@ -358,7 +358,7 @@ SPEED = 250
 
 frames = SubResource( 1 )
 animation = "front_idle"
-frame = 16
+frame = 6
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]

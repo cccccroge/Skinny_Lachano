@@ -20,7 +20,7 @@ func _ready():
 	# init speed
 	change_moving_speed(SPEED)
 	
-	set_process(true)
+	set_physics_process(true)
 	set_process_input(true)
 
 func _input(event):
@@ -42,7 +42,8 @@ func _input(event):
 		elif event.is_action_released("Right"):
 			key_rec["RIGHT"] = false
 
-func _process(delta):
+func _physics_process(delta):
+	# decide the vel base on input
 	dir = Vector2(0, 0)
 	if key_rec["UP"] == true:
 		dir.y -= 1
@@ -54,8 +55,8 @@ func _process(delta):
 		dir.x += 1 
 	vel = dir.normalized() * SPEED
 	
-	# change position by velocity
-	self.position += vel * delta
+	# apply movement to character
+	move_and_slide(vel)
 	
 	# change animation by velocity
 	if vel.length() == 0 and anim.animation != "front_idle":
@@ -74,7 +75,6 @@ func _process(delta):
 		elif vel.y < 0 and vel.x == 0:
 			change_animation_to("behind_move")
 			anim.flip_h = false
-	
 
 # Custom Functions
 func change_animation_to(name):
