@@ -343,7 +343,7 @@ custom_solver_bias = 0.0
 radius = 5.0
 height = 55.3292
 
-[node name="Lachano" type="KinematicBody2D"]
+[node name="Lachano" type="KinematicBody2D" index="0"]
 
 position = Vector2( 964.204, 527.59 )
 input_pickable = false
@@ -356,10 +356,12 @@ SPEED = 250
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
 
+position = Vector2( 1.34192, 90.7202 )
 frames = SubResource( 1 )
 animation = "front_idle"
-frame = 6
+frame = 49
 playing = true
+offset = Vector2( -1.34192, -90.7202 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
