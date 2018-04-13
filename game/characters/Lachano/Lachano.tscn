@@ -345,7 +345,7 @@ height = 55.3292
 
 [node name="Lachano" type="KinematicBody2D" index="0"]
 
-position = Vector2( 964.204, 527.59 )
+position = Vector2( 958.217, 518.609 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -356,16 +356,16 @@ SPEED = 250
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
 
-position = Vector2( 1.34192, 90.7202 )
+position = Vector2( 1.34198, -118.238 )
 frames = SubResource( 1 )
 animation = "front_idle"
-frame = 49
+frame = 39
 playing = true
-offset = Vector2( -1.34192, -90.7202 )
+offset = Vector2( -1.34192, 30 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 0.323547, 90.2657 )
+position = Vector2( 0.922363, 1.65302 )
 rotation = 1.5708
 shape = SubResource( 2 )
 _sections_unfolded = [ "Transform" ]

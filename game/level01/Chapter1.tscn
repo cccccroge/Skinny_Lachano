@@ -7,7 +7,7 @@
 [ext_resource path="res://level01/object/Candle.tscn" type="PackedScene" id=5]
 [ext_resource path="res://level01/scene/light_1.png" type="Texture" id=6]
 
-[node name="Chapter1" type="Node2D" index="0"]
+[node name="Chapter1" type="Node2D"]
 
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
