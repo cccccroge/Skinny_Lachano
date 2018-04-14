@@ -16,31 +16,31 @@
 custom_solver_bias = 0.0
 extents = Vector2( 27.9258, 157.901 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 456.401, 45.7598 )
 
-[sub_resource type="OccluderPolygon2D" id=4]
+[sub_resource type="OccluderPolygon2D" id=3]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -113.94, 20.3248, -101.626, -12.644, -88.9153, -18.6023, -67.4657, -18.6023, -48.0022, -17.8079, -39.6606, -12.2468, -32.5108, -4.30255, -28.1414, 11.586, -19.0055, 11.1888, -2.71973, 11.1888, 6.81348, 17.9415, 17.9354, 24.6941, 27.0714, 39.3911, 31.0435, 27.4746, 41.3711, 28.269, 54.4792, 25.4885, 69.9706, 30.2551, 81.887, 31.8439, 92.6118, 30.2551, 114.856, 32.6384, 120.02, 39.7883, 123.197, 56.8685, 87.0508, 70.771, 58.8485, 69.5793, 34.6185, 64.4156, 21.1132, 62.8267, 10.3884, 70.771, -3.91138, 77.9208, -31.7164, 76.7292, -47.2078, 59.2518, -57.9325, 44.5548, -59.9186, 34.6245, -80.9709, 33.4328, -105.201, 29.0635 )
 
-[sub_resource type="OccluderPolygon2D" id=5]
+[sub_resource type="OccluderPolygon2D" id=4]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -64.7257, 11.8868, -51.746, 13.1719, -39.2803, 11.7583, -24.7584, 10.0876, -13.8348, 9.05957, -9.46545, 8.15997, 17.1366, 28.4649, 47.0797, 47.9988, 52.9913, 49.798, 54.0194, 48.5128, 14.9517, 23.71, -8.18054, 5.97528, -32.3407, 8.67401, -51.7461, 10.7302 )
 
-[sub_resource type="ShaderMaterial" id=6]
+[sub_resource type="ShaderMaterial" id=5]
 
 render_priority = 0
 shader = ExtResource( 7 )
 shader_param/normal = ExtResource( 8 )
 _sections_unfolded = [ "shader_param" ]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=6]
 
 custom_solver_bias = 0.0
 extents = Vector2( 192.897, 10.0052 )
@@ -81,7 +81,7 @@ extents = Vector2( 192.897, 10.0052 )
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 3 ),
+"shape": SubResource( 2 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 7.64001, 9.83484 )
 } ]
 3/name = "Beaker"
@@ -91,7 +91,7 @@ extents = Vector2( 192.897, 10.0052 )
 3/region = Rect2( 0, 0, 255, 185 )
 3/is_autotile = false
 3/occluder_offset = Vector2( 127.5, 92.5 )
-3/occluder = SubResource( 4 )
+3/occluder = SubResource( 3 )
 3/navigation_offset = Vector2( 127.5, 92.5 )
 3/shapes = [  ]
 4/name = "Ruler_and_scissor"
@@ -101,7 +101,7 @@ extents = Vector2( 192.897, 10.0052 )
 4/region = Rect2( 0, 0, 134, 103 )
 4/is_autotile = false
 4/occluder_offset = Vector2( 67, 51.5 )
-4/occluder = SubResource( 5 )
+4/occluder = SubResource( 4 )
 4/navigation_offset = Vector2( 67, 51.5 )
 4/shapes = [  ]
 5/name = "Candle"
@@ -117,7 +117,7 @@ extents = Vector2( 192.897, 10.0052 )
 6/texture = ExtResource( 9 )
 6/normal_map = ExtResource( 8 )
 6/tex_offset = Vector2( 0, 0 )
-6/material = SubResource( 6 )
+6/material = SubResource( 5 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 0, 16, 152 )
 6/is_autotile = false
@@ -135,7 +135,7 @@ extents = Vector2( 192.897, 10.0052 )
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 2 ),
+"shape": SubResource( 6 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0.899582 )
 } ]
 
