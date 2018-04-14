@@ -351,21 +351,27 @@ collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_horizontal_guides_": [ 520.608 ],
+"_edit_vertical_guides_": [ 959.619 ]
+}
 BASE_SPEED = 100
 SPEED = 250
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
 
-position = Vector2( 1.34198, -118.238 )
+position = Vector2( 0.644104, 2.76591 )
 frames = SubResource( 1 )
 animation = "front_idle"
-frame = 39
+frame = 49
 playing = true
-offset = Vector2( -1.34192, 30 )
+centered = false
+offset = Vector2( -54, -188 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 0.922363, 1.65302 )
+position = Vector2( 1.40563, 1.90711 )
 rotation = 1.5708
 shape = SubResource( 2 )
 _sections_unfolded = [ "Transform" ]

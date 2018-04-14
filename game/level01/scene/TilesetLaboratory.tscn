@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://level01/scene/ground.png" type="Texture" id=1]
 [ext_resource path="res://level01/scene/wall_side.png" type="Texture" id=2]
 [ext_resource path="res://level01/scene/wall_front.png" type="Texture" id=3]
+[ext_resource path="res://level01/scene/cabinet.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -14,6 +15,11 @@ extents = Vector2( 27.9258, 157.901 )
 custom_solver_bias = 0.0
 extents = Vector2( 192.897, 10.0052 )
 
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 456.401, 45.7598 )
+
 [node name="TilesetLaboratory" type="Node2D"]
 
 __meta__ = {
@@ -24,8 +30,9 @@ __meta__ = {
 
 position = Vector2( 173.834, 118.462 )
 texture = ExtResource( 1 )
-offset = Vector2( -1.45567, 6.98605 )
-_sections_unfolded = [ "Material" ]
+centered = false
+offset = Vector2( -67, -52 )
+_sections_unfolded = [ "Material", "Offset" ]
 
 [node name="Wall_1" type="Sprite" parent="." index="1"]
 
@@ -52,6 +59,7 @@ shape = SubResource( 1 )
 
 [node name="Wall_2" type="Sprite" parent="." index="2"]
 
+editor/display_folded = true
 position = Vector2( 727.939, 244.096 )
 texture = ExtResource( 3 )
 centered = false
@@ -72,5 +80,29 @@ bounce = 0.0
 
 position = Vector2( 0, 0.899582 )
 shape = SubResource( 2 )
+
+[node name="Cabinet" type="Sprite" parent="." index="3"]
+
+position = Vector2( 573.018, 815.647 )
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -460, -130 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Cabinet" index="0"]
+
+position = Vector2( -10.5514, -10.5514 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cabinet/StaticBody2D" index="0"]
+
+position = Vector2( 7.64001, 9.83484 )
+shape = SubResource( 3 )
 
 
