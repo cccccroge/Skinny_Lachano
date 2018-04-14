@@ -1,40 +1,24 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://level01/scene/ground.png" type="Texture" id=1]
-[ext_resource path="res://level01/scene/normal.shader" type="Shader" id=2]
-[ext_resource path="res://level01/scene/cabinet.png" type="Texture" id=3]
-[ext_resource path="res://level01/scene/wall_normal.png" type="Texture" id=4]
-[ext_resource path="res://level01/scene/wall_side.png" type="Texture" id=5]
-[ext_resource path="res://level01/scene/wall_front.png" type="Texture" id=6]
+[ext_resource path="res://level01/scene/wall_side.png" type="Texture" id=2]
+[ext_resource path="res://level01/scene/wall_front.png" type="Texture" id=3]
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="RectangleShape2D" id=1]
 
-render_priority = 0
-shader = ExtResource( 2 )
+custom_solver_bias = 0.0
+extents = Vector2( 27.9258, 157.901 )
 
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 456.638, 51.9537 )
+extents = Vector2( 192.897, 10.0052 )
 
-[sub_resource type="ShaderMaterial" id=3]
+[node name="TilesetLaboratory" type="Node2D"]
 
-render_priority = 0
-shader = ExtResource( 2 )
-shader_param/normal = ExtResource( 4 )
-_sections_unfolded = [ "shader_param" ]
-
-[sub_resource type="RectangleShape2D" id=4]
-
-custom_solver_bias = 0.0
-extents = Vector2( 30.1121, 152.53 )
-
-[sub_resource type="RectangleShape2D" id=5]
-
-custom_solver_bias = 0.0
-extents = Vector2( 193.501, 11.3253 )
-
-[node name="TilesetLaboratory" type="Node2D" index="0"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
 
 [node name="Ground_1" type="Sprite" parent="." index="0"]
 
@@ -43,42 +27,17 @@ texture = ExtResource( 1 )
 offset = Vector2( -1.45567, 6.98605 )
 _sections_unfolded = [ "Material" ]
 
-[node name="Cabinet" type="Sprite" parent="." index="1"]
+[node name="Wall_1" type="Sprite" parent="." index="1"]
 
-material = SubResource( 1 )
-position = Vector2( 570.997, 697.998 )
-texture = ExtResource( 3 )
-offset = Vector2( -2.25732, -32.2741 )
-_sections_unfolded = [ "Material" ]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Cabinet" index="0"]
-
-position = Vector2( -2.25732, -32.2741 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Cabinet/StaticBody2D" index="0"]
-
-position = Vector2( -0.143433, 35.1973 )
-scale = Vector2( 1.00229, 1 )
-shape = SubResource( 2 )
-
-[node name="Wall_1" type="Sprite" parent="." index="2"]
-
-material = SubResource( 3 )
-position = Vector2( 366.562, 380.75 )
-texture = ExtResource( 5 )
-offset = Vector2( -1.04395, -98.643 )
-_sections_unfolded = [ "Material", "Offset" ]
+editor/display_folded = true
+position = Vector2( 370.138, 368.484 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -35, -345 )
+_sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall_1" index="0"]
 
-position = Vector2( -1.04395, -98.643 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -89,18 +48,18 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_1/StaticBody2D" index="0"]
 
-position = Vector2( 0.103333, 96.9498 )
-shape = SubResource( 4 )
+shape = SubResource( 1 )
 
-[node name="Wall_2" type="Sprite" parent="." index="3"]
+[node name="Wall_2" type="Sprite" parent="." index="2"]
 
-position = Vector2( 710.735, 254.236 )
-texture = ExtResource( 6 )
-offset = Vector2( -1.98309, -100.514 )
+position = Vector2( 727.939, 244.096 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -203, -220 )
+_sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall_2" index="0"]
 
-position = Vector2( -1.98309, -100.514 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -111,7 +70,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_2/StaticBody2D" index="0"]
 
-position = Vector2( 0.293335, 99.1453 )
-shape = SubResource( 5 )
+position = Vector2( 0, 0.899582 )
+shape = SubResource( 2 )
 
 
