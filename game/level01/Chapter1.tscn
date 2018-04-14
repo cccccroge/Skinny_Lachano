@@ -7,7 +7,7 @@
 [ext_resource path="res://level01/object/Candle.tscn" type="PackedScene" id=5]
 [ext_resource path="res://level01/scene/light_1.png" type="Texture" id=6]
 
-[node name="Chapter1" type="Node2D"]
+[node name="Chapter1" type="Node2D" index="0"]
 
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
@@ -128,6 +128,7 @@ _sections_unfolded = [ "Range" ]
 
 [node name="Default_light" type="CanvasModulate" parent="." index="3"]
 
+visible = false
 color = Color( 0.191406, 0.191406, 0.191406, 1 )
 
 
