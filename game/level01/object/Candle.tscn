@@ -75,13 +75,13 @@ _sections_unfolded = [ "Color", "Initial Velocity", "Scale", "Trail" ]
 position = Vector2( 1560.06, 881.78 )
 texture = ExtResource( 1 )
 centered = false
-offset = Vector2( -40, -120 )
+offset = Vector2( -40, -170 )
 script = ExtResource( 2 )
 _sections_unfolded = [ "Material", "Offset" ]
 
 [node name="Particles2D" type="Particles2D" parent="." index="0"]
 
-position = Vector2( -19.3127, -100.578 )
+position = Vector2( -19.3126, -150.291 )
 rotation = -1.5708
 emitting = true
 amount = 50
@@ -105,7 +105,7 @@ _sections_unfolded = [ "Process Material", "Textures", "Time" ]
 
 [node name="Particles2D2" type="Particles2D" parent="." index="1"]
 
-position = Vector2( 18.2173, -119.343 )
+position = Vector2( 18.2174, -169.056 )
 rotation = -1.5708
 emitting = true
 amount = 50
@@ -129,7 +129,7 @@ _sections_unfolded = [ "Process Material", "Textures", "Time" ]
 
 [node name="Light2D" type="Light2D" parent="." index="2"]
 
-position = Vector2( 0.281978, -105.504 )
+position = Vector2( 0.281978, -155.217 )
 enabled = true
 editor_only = false
 texture = ExtResource( 4 )

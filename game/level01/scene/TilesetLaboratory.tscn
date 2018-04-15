@@ -4,22 +4,22 @@
 [ext_resource path="res://level01/scene/wall_side.png" type="Texture" id=2]
 [ext_resource path="res://level01/scene/wall_front.png" type="Texture" id=3]
 [ext_resource path="res://level01/scene/wall_back.png" type="Texture" id=4]
-[ext_resource path="res://level01/scene/cabinet.png" type="Texture" id=5]
+[ext_resource path="res://level01/scene/table.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 27.9258, 157.901 )
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=6]
 
 custom_solver_bias = 0.0
 extents = Vector2( 192.897, 10.0052 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=7]
 
 custom_solver_bias = 0.0
-extents = Vector2( 456.401, 45.7598 )
+extents = Vector2( 447.24, 83.7327 )
 
 [node name="TilesetLaboratory" type="Node2D"]
 
@@ -80,7 +80,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_2/StaticBody2D" index="0"]
 
 position = Vector2( 0, 0.899582 )
-shape = SubResource( 2 )
+shape = SubResource( 6 )
 
 [node name="Wall_3" type="Sprite" parent="." index="3"]
 
@@ -103,19 +103,18 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_3/StaticBody2D" index="0"]
 
 position = Vector2( 0, 0.899582 )
-shape = SubResource( 2 )
+shape = SubResource( 6 )
 
-[node name="Cabinet" type="Sprite" parent="." index="4"]
+[node name="Table" type="Sprite" parent="." index="4"]
 
-position = Vector2( 573.018, 815.647 )
+position = Vector2( 587.148, 779.045 )
 texture = ExtResource( 5 )
 centered = false
-offset = Vector2( -460, -130 )
+offset = Vector2( -461, -202 )
 _sections_unfolded = [ "Offset" ]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Cabinet" index="0"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Table" index="0"]
 
-position = Vector2( -10.5514, -10.5514 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -124,9 +123,10 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Cabinet/StaticBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Table/StaticBody2D" index="0"]
 
-position = Vector2( 7.64001, 9.83484 )
-shape = SubResource( 3 )
+position = Vector2( -1.95389, 0 )
+scale = Vector2( 1.00434, 1 )
+shape = SubResource( 7 )
 
 
