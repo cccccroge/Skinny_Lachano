@@ -37,6 +37,7 @@ _sections_unfolded = [ "Cell" ]
 
 [node name="TileMap_structure" type="TileMap" parent="." index="1"]
 
+position = Vector2( 0, -16 )
 mode = 1
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 128, 100 )
@@ -54,7 +55,7 @@ collision_mask = 1
 occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( -1114096, 7, 0, -917491, 7, 0, -917488, 1, 0, -720886, 7, 0, -524281, 7, 0, -524266, 1, 0, -327676, 7, 0, -327655, 1, 0, -327652, 7, 0, -262138, 1, 0, -131071, 7, 0, -131047, 7, 0, -65527, 1, 0, 19, 2, 0, 131070, 7, 0, 65537, 1, 0, 65558, 7, 0, 262148, 1, 0, 262163, 7, 0, 327695, 1, 0, 458768, 7, 0, 655370, 1, 0, 655373, 7, 0, 851978, 7, 0 )
-_sections_unfolded = [ "Cell" ]
+_sections_unfolded = [ "Cell", "Transform" ]
 
 [node name="Lachano" parent="TileMap_structure" index="0" instance=ExtResource( 2 )]
 
@@ -88,8 +89,30 @@ editor_draw_limits = false
 editor_draw_drag_margin = true
 _sections_unfolded = [ "Drag Margin", "Limit", "Smoothing" ]
 
+[node name="Beakers" type="Sprite" parent="TileMap_structure" index="1"]
+
+position = Vector2( 910, 1006 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( -80, -150 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="Ruler_and_siser" type="Sprite" parent="TileMap_structure" index="2"]
+
+position = Vector2( 1086.55, 1004.47 )
+rotation = -0.0593036
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( -50, -100 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="Candle" parent="TileMap_structure" index="3" instance=ExtResource( 5 )]
+
+position = Vector2( 1540, 1006 )
+
 [node name="TileMap_object" type="TileMap" parent="." index="2"]
 
+position = Vector2( 0, -100 )
 mode = 1
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 128, 100 )
@@ -107,28 +130,7 @@ collision_mask = 1
 occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray(  )
-_sections_unfolded = [ "Cell" ]
-
-[node name="Beakers" type="Sprite" parent="TileMap_object" index="0"]
-
-position = Vector2( 902.563, 942.499 )
-texture = ExtResource( 3 )
-centered = false
-offset = Vector2( -80, -100 )
-_sections_unfolded = [ "Offset" ]
-
-[node name="Ruler_and_siser" type="Sprite" parent="TileMap_object" index="1"]
-
-position = Vector2( 1077.61, 945.199 )
-rotation = -0.0593036
-texture = ExtResource( 4 )
-centered = false
-offset = Vector2( -50, -50 )
-_sections_unfolded = [ "Offset" ]
-
-[node name="Candle" parent="TileMap_object" index="2" instance=ExtResource( 5 )]
-
-position = Vector2( 1535.47, 933.67 )
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Light2D" type="Light2D" parent="." index="3"]
 
