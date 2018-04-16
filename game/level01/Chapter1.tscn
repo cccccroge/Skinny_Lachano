@@ -54,13 +54,13 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( -1114096, 7, 0, -917491, 7, 0, -917488, 1, 0, -720886, 7, 0, -524281, 7, 0, -524266, 1, 0, -327676, 7, 0, -327655, 1, 0, -327652, 8, 0, -262138, 1, 0, -131071, 7, 0, -131047, 8, 0, -65527, 1, 0, -65518, 9, 0, 131070, 7, 0, 65537, 1, 0, 65558, 8, 0, 262148, 1, 0, 262163, 8, 0, 327695, 1, 0, 458768, 8, 0, 655370, 1, 0, 655373, 8, 0, 851978, 8, 0 )
+tile_data = PoolIntArray( -1114096, 7, 0, -917491, 7, 0, -917488, 1, 0, -720886, 7, 0, -524281, 7, 0, -524266, 1, 0, -327676, 7, 0, -327655, 1, 0, -327652, 8, 0, -262138, 1, 0, -131071, 7, 0, -131067, 10, 0, -131047, 8, 0, -65527, 1, 0, -65518, 9, 0, 131070, 7, 0, 65537, 1, 0, 65558, 8, 0, 262148, 1, 0, 262163, 8, 0, 327695, 1, 0, 458768, 8, 0, 655370, 1, 0, 655373, 8, 0, 851978, 8, 0 )
 _sections_unfolded = [ "Cell", "Transform" ]
 
 [node name="Lachano" parent="TileMap_structure" index="0" instance=ExtResource( 2 )]
 
 editor/display_folded = true
-position = Vector2( 969.115, 579.194 )
+position = Vector2( 277.318, 208.19 )
 
 [node name="Camera2D" type="Camera2D" parent="TileMap_structure/Lachano" index="2"]
 
@@ -134,6 +134,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Light2D" type="Light2D" parent="." index="3"]
 
+visible = false
 position = Vector2( 1288.16, 380.534 )
 enabled = true
 editor_only = false
@@ -141,7 +142,7 @@ texture = ExtResource( 6 )
 offset = Vector2( 0, 0 )
 texture_scale = 0.8
 color = Color( 1, 1, 1, 1 )
-energy = 0.8
+energy = 1.0
 mode = 0
 range_height = 100.0
 range_z_min = -1024
@@ -158,8 +159,34 @@ shadow_filter_smooth = 0.0
 shadow_item_cull_mask = 1
 _sections_unfolded = [ "Range" ]
 
-[node name="Default_light" type="CanvasModulate" parent="." index="4"]
+[node name="Light_bedroom" type="Light2D" parent="." index="4"]
 
-color = Color( 0.2, 0.2, 0.2, 1 )
+position = Vector2( 341.75, 213.793 )
+enabled = true
+editor_only = false
+texture = ExtResource( 6 )
+offset = Vector2( 0, 0 )
+texture_scale = 0.5
+color = Color( 1, 1, 1, 1 )
+energy = 0.7
+mode = 0
+range_height = 100.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Range" ]
+
+[node name="Default_light" type="CanvasModulate" parent="." index="5"]
+
+color = Color( 0.296875, 0.296875, 0.296875, 1 )
 
 
