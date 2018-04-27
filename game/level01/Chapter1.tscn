@@ -170,7 +170,6 @@ position = Vector2( 1582.05, 960.394 )
 
 [node name="Default_light" type="CanvasModulate" parent="." index="2"]
 
-visible = false
 material = SubResource( 2 )
 color = Color( 0.199219, 0.199219, 0.199219, 1 )
 _sections_unfolded = [ "Material", "Z Index" ]
