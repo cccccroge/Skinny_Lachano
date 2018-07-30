@@ -7,10 +7,7 @@ path="res://.import/pi_light.png-b302f2f8d3624d9731b9e67ad5f29beb.stex"
 [deps]
 
 source_file="res://level01/scene/pi_light.png"
-source_md5="56695aee93760ac1eb61c6ff1dd98c5e"
-
 dest_files=[ "res://.import/pi_light.png-b302f2f8d3624d9731b9e67ad5f29beb.stex" ]
-dest_md5="d4df62887d780fea912d0387c94def4e"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/cabinet.png-e17ba2fb704783ab1e341c6f7939a348.stex"
 [deps]
 
 source_file="res://level01/scene/cabinet.png"
-source_md5="db18f6bd1fa828a6bc4967524c2d8353"
-
 dest_files=[ "res://.import/cabinet.png-e17ba2fb704783ab1e341c6f7939a348.stex" ]
-dest_md5="1a7831a423e7699bb5230d4359ddad13"
 
 [params]
 

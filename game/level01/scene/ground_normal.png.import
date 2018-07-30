@@ -7,10 +7,7 @@ path="res://.import/ground_normal.png-74a17f0a48f4a287adde2364741c1d02.stex"
 [deps]
 
 source_file="res://level01/scene/ground_normal.png"
-source_md5="95983cafeac54103e60794af820e2ebf"
-
 dest_files=[ "res://.import/ground_normal.png-74a17f0a48f4a287adde2364741c1d02.stex" ]
-dest_md5="dc63c5e812984019c3027949aeb5b6ce"
 
 [params]
 

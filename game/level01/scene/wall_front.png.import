@@ -7,10 +7,7 @@ path="res://.import/wall_front.png-6d5ff07bc8d205c81dda93501c9d6b70.stex"
 [deps]
 
 source_file="res://level01/scene/wall_front.png"
-source_md5="1fa60c7438daeceb06cdc0db4b887c70"
-
 dest_files=[ "res://.import/wall_front.png-6d5ff07bc8d205c81dda93501c9d6b70.stex" ]
-dest_md5="eeef0eb17bdb90f302c55765d0533275"
 
 [params]
 

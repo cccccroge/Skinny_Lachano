@@ -7,10 +7,7 @@ path="res://.import/table.png-64c9dcc14dfe6b99c008d5291f3de2fd.stex"
 [deps]
 
 source_file="res://level01/scene/table.png"
-source_md5="775f4ee5c426b2ccb95a9419f78dd6ae"
-
 dest_files=[ "res://.import/table.png-64c9dcc14dfe6b99c008d5291f3de2fd.stex" ]
-dest_md5="b351f7d009dd86755e6aaddcbd8c1e79"
 
 [params]
 

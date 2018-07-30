@@ -7,10 +7,7 @@ path="res://.import/front_move_030.png-32526677a420751aead9e6e8010fe8e7.stex"
 [deps]
 
 source_file="res://characters/Lachano/front_move/front_move_030.png"
-source_md5="b055f6bf0f66e618b70cda50edf280f9"
-
 dest_files=[ "res://.import/front_move_030.png-32526677a420751aead9e6e8010fe8e7.stex" ]
-dest_md5="61639d1d12c34f504cabc6349ea8b20a"
 
 [params]
 

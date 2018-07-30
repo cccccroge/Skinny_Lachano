@@ -7,10 +7,7 @@ path="res://.import/side_move_021.png-ec590352ad864a74df81568f2a8f8efe.stex"
 [deps]
 
 source_file="res://characters/Lachano/side_move/side_move_021.png"
-source_md5="03820383c545ec8ca931a5393e801170"
-
 dest_files=[ "res://.import/side_move_021.png-ec590352ad864a74df81568f2a8f8efe.stex" ]
-dest_md5="fa374ac4856aba55e30faa244f562391"
 
 [params]
 

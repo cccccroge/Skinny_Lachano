@@ -7,10 +7,7 @@ path="res://.import/behind_move_052.png-8ea1bc9c97a87bcf0c1a602f7751942d.stex"
 [deps]
 
 source_file="res://characters/Lachano/behind_move/behind_move_052.png"
-source_md5="0f5cdaec34c99fc598911527ad32cf0c"
-
 dest_files=[ "res://.import/behind_move_052.png-8ea1bc9c97a87bcf0c1a602f7751942d.stex" ]
-dest_md5="c895f4780a0bcd311d5bbdc00e762ac4"
 
 [params]
 

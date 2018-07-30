@@ -7,10 +7,7 @@ path="res://.import/flame.png-0ab42388f0201e4e589ecaabe271a7c8.stex"
 [deps]
 
 source_file="res://level01/object/flame.png"
-source_md5="175b849a0294e93677f3795821a5497c"
-
 dest_files=[ "res://.import/flame.png-0ab42388f0201e4e589ecaabe271a7c8.stex" ]
-dest_md5="f3b1c89c283d5746712df99ab52cc1c3"
 
 [params]
 

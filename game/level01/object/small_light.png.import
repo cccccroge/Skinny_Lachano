@@ -7,10 +7,7 @@ path="res://.import/small_light.png-5ddd8c908339bd2159c03c1832c106e2.stex"
 [deps]
 
 source_file="res://level01/object/small_light.png"
-source_md5="557366a3c2e2b495f4a351000f4714bc"
-
 dest_files=[ "res://.import/small_light.png-5ddd8c908339bd2159c03c1832c106e2.stex" ]
-dest_md5="1e2e0056dd384628ed9b31b6c4462805"
 
 [params]
 

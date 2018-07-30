@@ -7,10 +7,7 @@ path="res://.import/candle.png-7b1763abbead325c81dc91c6e018cf25.stex"
 [deps]
 
 source_file="res://level01/object/candle.png"
-source_md5="f23aeeda14308e7ba33326e8c42c1052"
-
 dest_files=[ "res://.import/candle.png-7b1763abbead325c81dc91c6e018cf25.stex" ]
-dest_md5="d4eb9ceb687f879f06334659cd69fddd"
 
 [params]
 

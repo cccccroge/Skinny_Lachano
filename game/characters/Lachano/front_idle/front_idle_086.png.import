@@ -7,10 +7,7 @@ path="res://.import/front_idle_086.png-eba0f1088888f35fe6534cec9cad08a1.stex"
 [deps]
 
 source_file="res://characters/Lachano/front_idle/front_idle_086.png"
-source_md5="818c9b461c273c33bd90db9abb74da2f"
-
 dest_files=[ "res://.import/front_idle_086.png-eba0f1088888f35fe6534cec9cad08a1.stex" ]
-dest_md5="1f76112e3ff79220ffee379c3dcae13f"
 
 [params]
 
