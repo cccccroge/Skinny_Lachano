@@ -364,8 +364,7 @@ SPEED = 250
 position = Vector2( 0.644104, 2.76591 )
 frames = SubResource( 1 )
 animation = "front_idle"
-frame = 49
-playing = true
+frame = 50
 centered = false
 offset = Vector2( -54, -188 )
 
