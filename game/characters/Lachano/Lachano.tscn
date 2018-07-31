@@ -1,351 +1,377 @@
-[gd_scene load_steps=315 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://characters/Lachano/Lachano.gd" type="Script" id=1]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_000.png" type="Texture" id=2]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_001.png" type="Texture" id=3]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_002.png" type="Texture" id=4]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_003.png" type="Texture" id=5]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_004.png" type="Texture" id=6]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_005.png" type="Texture" id=7]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_006.png" type="Texture" id=8]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_007.png" type="Texture" id=9]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_008.png" type="Texture" id=10]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_009.png" type="Texture" id=11]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_010.png" type="Texture" id=12]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_011.png" type="Texture" id=13]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_012.png" type="Texture" id=14]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_013.png" type="Texture" id=15]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_014.png" type="Texture" id=16]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_015.png" type="Texture" id=17]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_016.png" type="Texture" id=18]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_017.png" type="Texture" id=19]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_018.png" type="Texture" id=20]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_019.png" type="Texture" id=21]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_020.png" type="Texture" id=22]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_021.png" type="Texture" id=23]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_022.png" type="Texture" id=24]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_023.png" type="Texture" id=25]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_024.png" type="Texture" id=26]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_025.png" type="Texture" id=27]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_026.png" type="Texture" id=28]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_027.png" type="Texture" id=29]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_028.png" type="Texture" id=30]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_029.png" type="Texture" id=31]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_030.png" type="Texture" id=32]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_031.png" type="Texture" id=33]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_032.png" type="Texture" id=34]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_033.png" type="Texture" id=35]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_034.png" type="Texture" id=36]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_035.png" type="Texture" id=37]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_036.png" type="Texture" id=38]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_037.png" type="Texture" id=39]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_038.png" type="Texture" id=40]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_039.png" type="Texture" id=41]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_040.png" type="Texture" id=42]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_041.png" type="Texture" id=43]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_042.png" type="Texture" id=44]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_043.png" type="Texture" id=45]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_044.png" type="Texture" id=46]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_045.png" type="Texture" id=47]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_046.png" type="Texture" id=48]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_047.png" type="Texture" id=49]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_048.png" type="Texture" id=50]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_049.png" type="Texture" id=51]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_050.png" type="Texture" id=52]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_051.png" type="Texture" id=53]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_052.png" type="Texture" id=54]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_053.png" type="Texture" id=55]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_054.png" type="Texture" id=56]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_055.png" type="Texture" id=57]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_056.png" type="Texture" id=58]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_057.png" type="Texture" id=59]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_058.png" type="Texture" id=60]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_059.png" type="Texture" id=61]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_060.png" type="Texture" id=62]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_061.png" type="Texture" id=63]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_062.png" type="Texture" id=64]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_063.png" type="Texture" id=65]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_064.png" type="Texture" id=66]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_065.png" type="Texture" id=67]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_066.png" type="Texture" id=68]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_067.png" type="Texture" id=69]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_068.png" type="Texture" id=70]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_069.png" type="Texture" id=71]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_070.png" type="Texture" id=72]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_071.png" type="Texture" id=73]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_072.png" type="Texture" id=74]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_073.png" type="Texture" id=75]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_074.png" type="Texture" id=76]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_075.png" type="Texture" id=77]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_076.png" type="Texture" id=78]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_077.png" type="Texture" id=79]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_078.png" type="Texture" id=80]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_079.png" type="Texture" id=81]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_080.png" type="Texture" id=82]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_081.png" type="Texture" id=83]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_082.png" type="Texture" id=84]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_083.png" type="Texture" id=85]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_084.png" type="Texture" id=86]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_085.png" type="Texture" id=87]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_086.png" type="Texture" id=88]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_087.png" type="Texture" id=89]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_088.png" type="Texture" id=90]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_089.png" type="Texture" id=91]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_090.png" type="Texture" id=92]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_091.png" type="Texture" id=93]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_092.png" type="Texture" id=94]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_093.png" type="Texture" id=95]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_094.png" type="Texture" id=96]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_095.png" type="Texture" id=97]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_096.png" type="Texture" id=98]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_097.png" type="Texture" id=99]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_098.png" type="Texture" id=100]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_099.png" type="Texture" id=101]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_100.png" type="Texture" id=102]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_101.png" type="Texture" id=103]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_102.png" type="Texture" id=104]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_103.png" type="Texture" id=105]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_104.png" type="Texture" id=106]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_105.png" type="Texture" id=107]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_106.png" type="Texture" id=108]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_107.png" type="Texture" id=109]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_108.png" type="Texture" id=110]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_109.png" type="Texture" id=111]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_110.png" type="Texture" id=112]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_111.png" type="Texture" id=113]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_112.png" type="Texture" id=114]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_113.png" type="Texture" id=115]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_114.png" type="Texture" id=116]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_115.png" type="Texture" id=117]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_116.png" type="Texture" id=118]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_117.png" type="Texture" id=119]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_118.png" type="Texture" id=120]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_119.png" type="Texture" id=121]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_120.png" type="Texture" id=122]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_121.png" type="Texture" id=123]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_122.png" type="Texture" id=124]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_123.png" type="Texture" id=125]
-[ext_resource path="res://characters/Lachano/front_idle/front_idle_124.png" type="Texture" id=126]
-[ext_resource path="res://characters/Lachano/front_move/front_move_000.png" type="Texture" id=127]
-[ext_resource path="res://characters/Lachano/front_move/front_move_001.png" type="Texture" id=128]
-[ext_resource path="res://characters/Lachano/front_move/front_move_002.png" type="Texture" id=129]
-[ext_resource path="res://characters/Lachano/front_move/front_move_003.png" type="Texture" id=130]
-[ext_resource path="res://characters/Lachano/front_move/front_move_004.png" type="Texture" id=131]
-[ext_resource path="res://characters/Lachano/front_move/front_move_005.png" type="Texture" id=132]
-[ext_resource path="res://characters/Lachano/front_move/front_move_006.png" type="Texture" id=133]
-[ext_resource path="res://characters/Lachano/front_move/front_move_007.png" type="Texture" id=134]
-[ext_resource path="res://characters/Lachano/front_move/front_move_008.png" type="Texture" id=135]
-[ext_resource path="res://characters/Lachano/front_move/front_move_009.png" type="Texture" id=136]
-[ext_resource path="res://characters/Lachano/front_move/front_move_010.png" type="Texture" id=137]
-[ext_resource path="res://characters/Lachano/front_move/front_move_011.png" type="Texture" id=138]
-[ext_resource path="res://characters/Lachano/front_move/front_move_012.png" type="Texture" id=139]
-[ext_resource path="res://characters/Lachano/front_move/front_move_013.png" type="Texture" id=140]
-[ext_resource path="res://characters/Lachano/front_move/front_move_014.png" type="Texture" id=141]
-[ext_resource path="res://characters/Lachano/front_move/front_move_015.png" type="Texture" id=142]
-[ext_resource path="res://characters/Lachano/front_move/front_move_016.png" type="Texture" id=143]
-[ext_resource path="res://characters/Lachano/front_move/front_move_017.png" type="Texture" id=144]
-[ext_resource path="res://characters/Lachano/front_move/front_move_018.png" type="Texture" id=145]
-[ext_resource path="res://characters/Lachano/front_move/front_move_019.png" type="Texture" id=146]
-[ext_resource path="res://characters/Lachano/front_move/front_move_020.png" type="Texture" id=147]
-[ext_resource path="res://characters/Lachano/front_move/front_move_021.png" type="Texture" id=148]
-[ext_resource path="res://characters/Lachano/front_move/front_move_022.png" type="Texture" id=149]
-[ext_resource path="res://characters/Lachano/front_move/front_move_023.png" type="Texture" id=150]
-[ext_resource path="res://characters/Lachano/front_move/front_move_024.png" type="Texture" id=151]
-[ext_resource path="res://characters/Lachano/front_move/front_move_025.png" type="Texture" id=152]
-[ext_resource path="res://characters/Lachano/front_move/front_move_026.png" type="Texture" id=153]
-[ext_resource path="res://characters/Lachano/front_move/front_move_027.png" type="Texture" id=154]
-[ext_resource path="res://characters/Lachano/front_move/front_move_028.png" type="Texture" id=155]
-[ext_resource path="res://characters/Lachano/front_move/front_move_029.png" type="Texture" id=156]
-[ext_resource path="res://characters/Lachano/front_move/front_move_030.png" type="Texture" id=157]
-[ext_resource path="res://characters/Lachano/front_move/front_move_031.png" type="Texture" id=158]
-[ext_resource path="res://characters/Lachano/front_move/front_move_032.png" type="Texture" id=159]
-[ext_resource path="res://characters/Lachano/front_move/front_move_033.png" type="Texture" id=160]
-[ext_resource path="res://characters/Lachano/front_move/front_move_034.png" type="Texture" id=161]
-[ext_resource path="res://characters/Lachano/front_move/front_move_035.png" type="Texture" id=162]
-[ext_resource path="res://characters/Lachano/front_move/front_move_036.png" type="Texture" id=163]
-[ext_resource path="res://characters/Lachano/front_move/front_move_037.png" type="Texture" id=164]
-[ext_resource path="res://characters/Lachano/front_move/front_move_038.png" type="Texture" id=165]
-[ext_resource path="res://characters/Lachano/front_move/front_move_039.png" type="Texture" id=166]
-[ext_resource path="res://characters/Lachano/front_move/front_move_040.png" type="Texture" id=167]
-[ext_resource path="res://characters/Lachano/front_move/front_move_041.png" type="Texture" id=168]
-[ext_resource path="res://characters/Lachano/front_move/front_move_042.png" type="Texture" id=169]
-[ext_resource path="res://characters/Lachano/front_move/front_move_043.png" type="Texture" id=170]
-[ext_resource path="res://characters/Lachano/front_move/front_move_044.png" type="Texture" id=171]
-[ext_resource path="res://characters/Lachano/front_move/front_move_045.png" type="Texture" id=172]
-[ext_resource path="res://characters/Lachano/front_move/front_move_046.png" type="Texture" id=173]
-[ext_resource path="res://characters/Lachano/front_move/front_move_047.png" type="Texture" id=174]
-[ext_resource path="res://characters/Lachano/front_move/front_move_048.png" type="Texture" id=175]
-[ext_resource path="res://characters/Lachano/front_move/front_move_049.png" type="Texture" id=176]
-[ext_resource path="res://characters/Lachano/front_move/front_move_050.png" type="Texture" id=177]
-[ext_resource path="res://characters/Lachano/front_move/front_move_051.png" type="Texture" id=178]
-[ext_resource path="res://characters/Lachano/front_move/front_move_052.png" type="Texture" id=179]
-[ext_resource path="res://characters/Lachano/front_move/front_move_053.png" type="Texture" id=180]
-[ext_resource path="res://characters/Lachano/front_move/front_move_054.png" type="Texture" id=181]
-[ext_resource path="res://characters/Lachano/front_move/front_move_055.png" type="Texture" id=182]
-[ext_resource path="res://characters/Lachano/front_move/front_move_056.png" type="Texture" id=183]
-[ext_resource path="res://characters/Lachano/front_move/front_move_057.png" type="Texture" id=184]
-[ext_resource path="res://characters/Lachano/front_move/front_move_058.png" type="Texture" id=185]
-[ext_resource path="res://characters/Lachano/front_move/front_move_059.png" type="Texture" id=186]
-[ext_resource path="res://characters/Lachano/front_move/front_move_060.png" type="Texture" id=187]
-[ext_resource path="res://characters/Lachano/front_move/front_move_061.png" type="Texture" id=188]
-[ext_resource path="res://characters/Lachano/side_move/side_move_000.png" type="Texture" id=189]
-[ext_resource path="res://characters/Lachano/side_move/side_move_001.png" type="Texture" id=190]
-[ext_resource path="res://characters/Lachano/side_move/side_move_002.png" type="Texture" id=191]
-[ext_resource path="res://characters/Lachano/side_move/side_move_003.png" type="Texture" id=192]
-[ext_resource path="res://characters/Lachano/side_move/side_move_004.png" type="Texture" id=193]
-[ext_resource path="res://characters/Lachano/side_move/side_move_005.png" type="Texture" id=194]
-[ext_resource path="res://characters/Lachano/side_move/side_move_006.png" type="Texture" id=195]
-[ext_resource path="res://characters/Lachano/side_move/side_move_007.png" type="Texture" id=196]
-[ext_resource path="res://characters/Lachano/side_move/side_move_008.png" type="Texture" id=197]
-[ext_resource path="res://characters/Lachano/side_move/side_move_009.png" type="Texture" id=198]
-[ext_resource path="res://characters/Lachano/side_move/side_move_010.png" type="Texture" id=199]
-[ext_resource path="res://characters/Lachano/side_move/side_move_011.png" type="Texture" id=200]
-[ext_resource path="res://characters/Lachano/side_move/side_move_012.png" type="Texture" id=201]
-[ext_resource path="res://characters/Lachano/side_move/side_move_013.png" type="Texture" id=202]
-[ext_resource path="res://characters/Lachano/side_move/side_move_014.png" type="Texture" id=203]
-[ext_resource path="res://characters/Lachano/side_move/side_move_015.png" type="Texture" id=204]
-[ext_resource path="res://characters/Lachano/side_move/side_move_016.png" type="Texture" id=205]
-[ext_resource path="res://characters/Lachano/side_move/side_move_017.png" type="Texture" id=206]
-[ext_resource path="res://characters/Lachano/side_move/side_move_018.png" type="Texture" id=207]
-[ext_resource path="res://characters/Lachano/side_move/side_move_019.png" type="Texture" id=208]
-[ext_resource path="res://characters/Lachano/side_move/side_move_020.png" type="Texture" id=209]
-[ext_resource path="res://characters/Lachano/side_move/side_move_021.png" type="Texture" id=210]
-[ext_resource path="res://characters/Lachano/side_move/side_move_022.png" type="Texture" id=211]
-[ext_resource path="res://characters/Lachano/side_move/side_move_023.png" type="Texture" id=212]
-[ext_resource path="res://characters/Lachano/side_move/side_move_024.png" type="Texture" id=213]
-[ext_resource path="res://characters/Lachano/side_move/side_move_025.png" type="Texture" id=214]
-[ext_resource path="res://characters/Lachano/side_move/side_move_026.png" type="Texture" id=215]
-[ext_resource path="res://characters/Lachano/side_move/side_move_027.png" type="Texture" id=216]
-[ext_resource path="res://characters/Lachano/side_move/side_move_028.png" type="Texture" id=217]
-[ext_resource path="res://characters/Lachano/side_move/side_move_029.png" type="Texture" id=218]
-[ext_resource path="res://characters/Lachano/side_move/side_move_030.png" type="Texture" id=219]
-[ext_resource path="res://characters/Lachano/side_move/side_move_031.png" type="Texture" id=220]
-[ext_resource path="res://characters/Lachano/side_move/side_move_032.png" type="Texture" id=221]
-[ext_resource path="res://characters/Lachano/side_move/side_move_033.png" type="Texture" id=222]
-[ext_resource path="res://characters/Lachano/side_move/side_move_034.png" type="Texture" id=223]
-[ext_resource path="res://characters/Lachano/side_move/side_move_035.png" type="Texture" id=224]
-[ext_resource path="res://characters/Lachano/side_move/side_move_036.png" type="Texture" id=225]
-[ext_resource path="res://characters/Lachano/side_move/side_move_037.png" type="Texture" id=226]
-[ext_resource path="res://characters/Lachano/side_move/side_move_038.png" type="Texture" id=227]
-[ext_resource path="res://characters/Lachano/side_move/side_move_039.png" type="Texture" id=228]
-[ext_resource path="res://characters/Lachano/side_move/side_move_040.png" type="Texture" id=229]
-[ext_resource path="res://characters/Lachano/side_move/side_move_041.png" type="Texture" id=230]
-[ext_resource path="res://characters/Lachano/side_move/side_move_042.png" type="Texture" id=231]
-[ext_resource path="res://characters/Lachano/side_move/side_move_043.png" type="Texture" id=232]
-[ext_resource path="res://characters/Lachano/side_move/side_move_044.png" type="Texture" id=233]
-[ext_resource path="res://characters/Lachano/side_move/side_move_045.png" type="Texture" id=234]
-[ext_resource path="res://characters/Lachano/side_move/side_move_046.png" type="Texture" id=235]
-[ext_resource path="res://characters/Lachano/side_move/side_move_047.png" type="Texture" id=236]
-[ext_resource path="res://characters/Lachano/side_move/side_move_048.png" type="Texture" id=237]
-[ext_resource path="res://characters/Lachano/side_move/side_move_049.png" type="Texture" id=238]
-[ext_resource path="res://characters/Lachano/side_move/side_move_050.png" type="Texture" id=239]
-[ext_resource path="res://characters/Lachano/side_move/side_move_051.png" type="Texture" id=240]
-[ext_resource path="res://characters/Lachano/side_move/side_move_052.png" type="Texture" id=241]
-[ext_resource path="res://characters/Lachano/side_move/side_move_053.png" type="Texture" id=242]
-[ext_resource path="res://characters/Lachano/side_move/side_move_054.png" type="Texture" id=243]
-[ext_resource path="res://characters/Lachano/side_move/side_move_055.png" type="Texture" id=244]
-[ext_resource path="res://characters/Lachano/side_move/side_move_056.png" type="Texture" id=245]
-[ext_resource path="res://characters/Lachano/side_move/side_move_057.png" type="Texture" id=246]
-[ext_resource path="res://characters/Lachano/side_move/side_move_058.png" type="Texture" id=247]
-[ext_resource path="res://characters/Lachano/side_move/side_move_059.png" type="Texture" id=248]
-[ext_resource path="res://characters/Lachano/side_move/side_move_060.png" type="Texture" id=249]
-[ext_resource path="res://characters/Lachano/side_move/side_move_061.png" type="Texture" id=250]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_000.png" type="Texture" id=251]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_001.png" type="Texture" id=252]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_002.png" type="Texture" id=253]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_003.png" type="Texture" id=254]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_004.png" type="Texture" id=255]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_005.png" type="Texture" id=256]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_006.png" type="Texture" id=257]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_007.png" type="Texture" id=258]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_008.png" type="Texture" id=259]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_009.png" type="Texture" id=260]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_010.png" type="Texture" id=261]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_011.png" type="Texture" id=262]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_012.png" type="Texture" id=263]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_013.png" type="Texture" id=264]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_014.png" type="Texture" id=265]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_015.png" type="Texture" id=266]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_016.png" type="Texture" id=267]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_017.png" type="Texture" id=268]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_018.png" type="Texture" id=269]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_019.png" type="Texture" id=270]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_020.png" type="Texture" id=271]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_021.png" type="Texture" id=272]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_022.png" type="Texture" id=273]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_023.png" type="Texture" id=274]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_024.png" type="Texture" id=275]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_025.png" type="Texture" id=276]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_026.png" type="Texture" id=277]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_027.png" type="Texture" id=278]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_028.png" type="Texture" id=279]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_029.png" type="Texture" id=280]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_030.png" type="Texture" id=281]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_031.png" type="Texture" id=282]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_032.png" type="Texture" id=283]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_033.png" type="Texture" id=284]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_034.png" type="Texture" id=285]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_035.png" type="Texture" id=286]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_036.png" type="Texture" id=287]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_037.png" type="Texture" id=288]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_038.png" type="Texture" id=289]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_039.png" type="Texture" id=290]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_040.png" type="Texture" id=291]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_041.png" type="Texture" id=292]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_042.png" type="Texture" id=293]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_043.png" type="Texture" id=294]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_044.png" type="Texture" id=295]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_045.png" type="Texture" id=296]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_046.png" type="Texture" id=297]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_047.png" type="Texture" id=298]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_048.png" type="Texture" id=299]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_049.png" type="Texture" id=300]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_050.png" type="Texture" id=301]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_051.png" type="Texture" id=302]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_052.png" type="Texture" id=303]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_053.png" type="Texture" id=304]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_054.png" type="Texture" id=305]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_055.png" type="Texture" id=306]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_056.png" type="Texture" id=307]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_057.png" type="Texture" id=308]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_058.png" type="Texture" id=309]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_059.png" type="Texture" id=310]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_060.png" type="Texture" id=311]
-[ext_resource path="res://characters/Lachano/behind_move/behind_move_061.png" type="Texture" id=312]
+[ext_resource path="res://characters/Lachano/front/front_0006_neck.png" type="Texture" id=2]
+[ext_resource path="res://characters/Lachano/front/front_0013_left_hand_up.png" type="Texture" id=3]
+[ext_resource path="res://characters/Lachano/front/front_0011_right_hand_up.png" type="Texture" id=4]
+[ext_resource path="res://characters/Lachano/front/front_0012_left_hand_down.png" type="Texture" id=5]
+[ext_resource path="res://characters/Lachano/front/front_0011_right_hand_down.png" type="Texture" id=6]
+[ext_resource path="res://characters/Lachano/front/front_0009_left_foot.png" type="Texture" id=7]
+[ext_resource path="res://characters/Lachano/front/front_0008_right_foot.png" type="Texture" id=8]
+[ext_resource path="res://characters/Lachano/front/front_0007_pant.png" type="Texture" id=9]
+[ext_resource path="res://characters/Lachano/front/front_0007_pant_left.png" type="Texture" id=10]
+[ext_resource path="res://characters/Lachano/front/front_0007_pant_right.png" type="Texture" id=11]
+[ext_resource path="res://characters/Lachano/front/front_0005_torsle.png" type="Texture" id=12]
+[ext_resource path="res://characters/Lachano/front/left_torsle.png" type="Texture" id=13]
+[ext_resource path="res://characters/Lachano/front/right_torsle.png" type="Texture" id=14]
+[ext_resource path="res://characters/Lachano/front/front_0004_head.png" type="Texture" id=15]
+[ext_resource path="res://characters/Lachano/front/front_0003_eyes.png" type="Texture" id=16]
+[ext_resource path="res://characters/Lachano/front/front_0003_eyes_closed.png" type="Texture" id=17]
+[ext_resource path="res://characters/Lachano/front/front_0001_mouth.png" type="Texture" id=18]
+[ext_resource path="res://characters/Lachano/front/front_0002_brow.png" type="Texture" id=19]
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="Animation" id=1]
 
-animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 126 ) ],
-"loop": true,
-"name": "front_idle",
-"speed": 60.0
-}, {
-"frames": [ ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 156 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 173 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 176 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ) ],
-"loop": true,
-"name": "front_move",
-"speed": 60.0
-}, {
-"frames": [ ExtResource( 189 ), ExtResource( 190 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 197 ), ExtResource( 198 ), ExtResource( 199 ), ExtResource( 200 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 249 ), ExtResource( 250 ) ],
-"loop": true,
-"name": "side_move",
-"speed": 60.0
-}, {
-"frames": [ ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ), ExtResource( 256 ), ExtResource( 257 ), ExtResource( 258 ), ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 267 ), ExtResource( 268 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 271 ), ExtResource( 272 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 275 ), ExtResource( 276 ), ExtResource( 277 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 283 ), ExtResource( 284 ), ExtResource( 285 ), ExtResource( 286 ), ExtResource( 287 ), ExtResource( 288 ), ExtResource( 289 ), ExtResource( 290 ), ExtResource( 291 ), ExtResource( 292 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 295 ), ExtResource( 296 ), ExtResource( 297 ), ExtResource( 298 ), ExtResource( 299 ), ExtResource( 300 ), ExtResource( 301 ), ExtResource( 302 ), ExtResource( 303 ), ExtResource( 304 ), ExtResource( 305 ), ExtResource( 306 ), ExtResource( 307 ), ExtResource( 308 ), ExtResource( 309 ), ExtResource( 310 ), ExtResource( 311 ), ExtResource( 312 ) ],
-"loop": true,
-"name": "behind_move",
-"speed": 60.0
-} ]
+resource_name = "Base"
+length = 1.0
+loop = false
+step = 0.1
 
-[sub_resource type="CapsuleShape2D" id=2]
+[sub_resource type="Animation" id=2]
 
-custom_solver_bias = 0.0
-radius = 5.0
-height = 55.3292
+resource_name = "Idle"
+length = 2.0
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Hip/Torso:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Hip/Torso:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -2.55464, -1.21761 ), Vector2( -2.15742, -8.31631 ), Vector2( -2.55464, -1.21761 ), Vector2( -2.15742, -8.31631 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hip/Torso:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1.02323 ), Vector2( 1, 1 ), Vector2( 1, 1.02323 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Hip/Torso/Shirt_right/Hand_right:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -19.8978, 35.9034 ), Vector2( -19.8978, 35.9034 ), Vector2( -19.8978, 35.9034 ), Vector2( -19.8978, 35.9034 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Hip/Torso/Shirt_right/Hand_right:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -5.39031, -16.6644, -5.39031, -16.6644 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Hip/Torso/Shirt_right/Hand_right:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Hip/Torso/Shirt_right:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18.7415, -44.4057 ), Vector2( -18.7415, -44.4057 ), Vector2( -18.7415, -44.4057 ), Vector2( -18.7415, -44.4057 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Hip/Torso/Shirt_right:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -7.2976, 3.97644, -7.2976, 3.97644 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Hip/Torso/Shirt_right:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Hip/Torso/Shirt_left/Hand_left:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 19.7468, 31.552 ), Vector2( 19.7468, 31.552 ), Vector2( 19.7468, 31.552 ), Vector2( 19.7468, 31.552 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Hip/Torso/Shirt_left/Hand_left:rotation_degrees")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -8.9678, 5.10041, -8.9678, 5.10041 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Hip/Torso/Shirt_left/Hand_left:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Hip/Torso/Shirt_left:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 21.1494, -43.3556 ), Vector2( 21.1494, -43.3556 ), Vector2( 21.1494, -43.3556 ), Vector2( 21.1494, -43.3556 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Hip/Torso/Shirt_left:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 8.9678, -5.10041, 8.9678, -5.10041 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Hip/Torso/Shirt_left:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Hip/Pants_right/Foot_right:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1.3986, 27.0979 ), Vector2( -0.409968, 27.0979 ), Vector2( -1.3986, 27.0979 ), Vector2( -0.409968, 27.0979 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Hip/Pants_right/Foot_right:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 0.0 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Hip/Pants_right/Foot_right:scale")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.943511, 1 ), Vector2( 1, 1 ), Vector2( 0.943511, 1 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Hip/Pants_right:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -12.7534, -10.7017 ), Vector2( -13.3795, -10.712 ), Vector2( -12.7534, -10.7017 ), Vector2( -13.3795, -10.712 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Hip/Pants_right:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.94888, 0.94888, 0.94888, 0.94888 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Hip/Pants_right:scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.03836, 1 ), Vector2( 1, 1 ), Vector2( 1.03836, 1 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Hip/Pants_left/Foot_left:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2.27272, 20.979 ), Vector2( 1.81252, 20.8366 ), Vector2( 2.27272, 20.979 ), Vector2( 1.81252, 20.8366 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Hip/Pants_left/Foot_left:rotation_degrees")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 0.0 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Hip/Pants_left/Foot_left:scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.959952, 1 ), Vector2( 1, 1 ), Vector2( 0.959952, 1 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Hip/Pants_left:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 11.0051, -7.29153 ), Vector2( 11.5714, -7.29153 ), Vector2( 11.0051, -7.29153 ), Vector2( 11.5714, -7.29153 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Hip/Pants_left:rotation_degrees")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0, 0.0 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Hip/Pants_left:scale")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.03968, 1 ), Vector2( 1, 1 ), Vector2( 1.03968, 1 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Sprites/Eyes_closed:visible")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.4, 1.6, 1.7, 1.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, false, false, true, false, true, false ]
+}
 
 [node name="Lachano" type="KinematicBody2D" index="0"]
 
-position = Vector2( 958.217, 518.609 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -353,26 +379,396 @@ collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
-"_edit_horizontal_guides_": [ 520.608 ],
-"_edit_vertical_guides_": [ 959.619 ]
+"_edit_horizontal_guides_": [ 520.608, -24.7492 ],
+"_edit_vertical_guides_": [ 959.619, 3.53906 ]
 }
 BASE_SPEED = 100
 SPEED = 250
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+[node name="Sprites" type="Node2D" parent="." index="0"]
 
-position = Vector2( 0.644104, 2.76591 )
-frames = SubResource( 1 )
-animation = "front_idle"
-frame = 50
-centered = false
-offset = Vector2( -54, -188 )
+editor/display_folded = true
+position = Vector2( 0, -13.5053 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+[node name="Neck" type="Sprite" parent="Sprites" index="0"]
 
-position = Vector2( 1.40563, 1.90711 )
-rotation = 1.5708
-shape = SubResource( 2 )
+position = Vector2( 4.41448, -3.82343 )
+scale = Vector2( 1, 1.00039 )
+texture = ExtResource( 2 )
+offset = Vector2( -0.425259, -8.48701 )
+
+[node name="Arm_right" type="Sprite" parent="Sprites" index="1"]
+
+position = Vector2( -24.6139, 20.7594 )
+rotation = -0.124097
+scale = Vector2( 1.00001, 1.00039 )
+texture = ExtResource( 3 )
+offset = Vector2( 0.506739, 4.89031 )
+
+[node name="Arm_left" type="Sprite" parent="Sprites" index="2"]
+
+position = Vector2( 31.3581, 12.0801 )
+rotation = 0.152436
+scale = Vector2( 1.00001, 1.00038 )
+texture = ExtResource( 4 )
+offset = Vector2( 2.58406, 5.32539 )
+
+[node name="Hand_right" type="Sprite" parent="Sprites" index="3"]
+
+position = Vector2( -30.8186, 35.0628 )
+rotation = -0.22153
+scale = Vector2( 1.00002, 1.00037 )
+texture = ExtResource( 5 )
+offset = Vector2( -1.20058, 10.0253 )
+
+[node name="Hand_left" type="Sprite" parent="Sprites" index="4"]
+
+position = Vector2( 39.1035, 32.206 )
+scale = Vector2( 1, 1.00039 )
+texture = ExtResource( 6 )
+offset = Vector2( 0.514877, 7.68149 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="Foot_right" type="Sprite" parent="Sprites" index="5"]
+
+position = Vector2( -8.82203, 59.0882 )
+rotation = 0.0165611
+scale = Vector2( 0.999694, 1 )
+texture = ExtResource( 7 )
+offset = Vector2( -10.3474, 7.69055 )
+
+[node name="Foot_left" type="Sprite" parent="Sprites" index="6"]
+
+position = Vector2( 19.0545, 56.4038 )
+scale = Vector2( 0.999993, 1 )
+texture = ExtResource( 8 )
+offset = Vector2( 10.5346, 10.1381 )
+
+[node name="Pants_hip" type="Sprite" parent="Sprites" index="7"]
+
+position = Vector2( 5.77329, 42.7188 )
+texture = ExtResource( 9 )
+offset = Vector2( -1.1633, 2.25183 )
+
+[node name="Pants_right" type="Sprite" parent="Sprites" index="8"]
+
+position = Vector2( -6.99065, 32.0169 )
+rotation = 0.0165611
+scale = Vector2( 1.00065, 1 )
+texture = ExtResource( 10 )
+offset = Vector2( -0.93065, 13.1335 )
+
+[node name="Pants_left" type="Sprite" parent="Sprites" index="9"]
+
+position = Vector2( 16.788, 35.4272 )
+scale = Vector2( 1.00067, 1 )
+texture = ExtResource( 11 )
+offset = Vector2( 2.63315, 9.71964 )
+
+[node name="Shirt_body" type="Sprite" parent="Sprites" index="10"]
+
+position = Vector2( 3.22535, 41.3815 )
+scale = Vector2( 1, 1.00039 )
+texture = ExtResource( 12 )
+offset = Vector2( -0.680145, -23.5388 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Shirt_right" type="Sprite" parent="Sprites" index="11"]
+
+position = Vector2( -15.5161, -3.04159 )
+rotation = -0.124097
+scale = Vector2( 1.00001, 1.00039 )
+texture = ExtResource( 13 )
+offset = Vector2( -11.2714, 12.2302 )
+
+[node name="Shirt_left" type="Sprite" parent="Sprites" index="12"]
+
+position = Vector2( 24.3747, -1.99107 )
+rotation = 0.152436
+scale = Vector2( 1.00001, 1.00038 )
+texture = ExtResource( 14 )
+offset = Vector2( 9.34015, 9.73459 )
+
+[node name="Head" type="Sprite" parent="Sprites" index="13"]
+
+position = Vector2( 1.75616, -41.99 )
+scale = Vector2( 1, 1.00039 )
+texture = ExtResource( 15 )
+
+[node name="Eyes" type="Sprite" parent="Sprites" index="14"]
+
+position = Vector2( 1.51832, -46.7484 )
+scale = Vector2( 1, 1.00039 )
+texture = ExtResource( 16 )
+
+[node name="Eyes_closed" type="Sprite" parent="Sprites" index="15"]
+
+visible = false
+position = Vector2( 1.51832, -46.0347 )
+scale = Vector2( 1, 1.00039 )
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Mouth" type="Sprite" parent="Sprites" index="16"]
+
+position = Vector2( 4.01726, -12.4267 )
+scale = Vector2( 1, 1.00039 )
+texture = ExtResource( 18 )
+
+[node name="Eyebrows" type="Sprite" parent="Sprites" index="17"]
+
+position = Vector2( 0.804846, -56.5032 )
+scale = Vector2( 1, 1.00039 )
+texture = ExtResource( 19 )
+
+[node name="Hip" type="RemoteTransform2D" parent="." index="1"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 5.77329, 29.2135 )
+remote_path = NodePath("../Sprites/Pants_hip")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Torso" type="RemoteTransform2D" parent="Hip" index="0"]
+
+position = Vector2( -2.54794, -1.33732 )
+scale = Vector2( 1, 1.00039 )
+remote_path = NodePath("../../Sprites/Shirt_body")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Shirt_right" type="RemoteTransform2D" parent="Hip/Torso" index="0"]
+
+position = Vector2( -18.7415, -44.4057 )
+rotation = -0.124049
+remote_path = NodePath("../../../Sprites/Shirt_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Arm_right" type="RemoteTransform2D" parent="Hip/Torso/Shirt_right" index="0"]
+
+position = Vector2( -11.9716, 22.4832 )
+remote_path = NodePath("../../../../Sprites/Arm_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Hand_right" type="RemoteTransform2D" parent="Hip/Torso/Shirt_right" index="1"]
+
+position = Vector2( -19.8978, 35.9034 )
+rotation = -0.0973969
+scale = Vector2( 1, 1 )
+remote_path = NodePath("../../../../Sprites/Hand_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Position2D" type="Position2D" parent="Hip/Torso/Shirt_right/Hand_right" index="0"]
+
+position = Vector2( -0.679348, 18.3009 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Shirt_left" type="RemoteTransform2D" parent="Hip/Torso" index="1"]
+
+position = Vector2( 21.1494, -43.3556 )
+rotation = 0.152377
+remote_path = NodePath("../../../Sprites/Shirt_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Arm_left" type="RemoteTransform2D" parent="Hip/Torso/Shirt_left" index="0"]
+
+position = Vector2( 9.03745, 12.8427 )
+remote_path = NodePath("../../../../Sprites/Arm_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Hand_left" type="RemoteTransform2D" parent="Hip/Torso/Shirt_left" index="1"]
+
+position = Vector2( 19.7468, 31.552 )
+rotation = -0.152377
+remote_path = NodePath("../../../../Sprites/Hand_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Position2D" type="Position2D" parent="Hip/Torso/Shirt_left/Hand_left" index="0"]
+
+position = Vector2( 0.858566, 15.8833 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Neck" type="RemoteTransform2D" parent="Hip/Torso" index="2"]
+
+position = Vector2( 1.18913, -45.1872 )
+remote_path = NodePath("../../../Sprites/Neck")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Head" type="RemoteTransform2D" parent="Hip/Torso/Neck" index="0"]
+
+position = Vector2( -2.65833, -38.1517 )
+remote_path = NodePath("../../../../Sprites/Head")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Eyes" type="RemoteTransform2D" parent="Hip/Torso/Neck/Head" index="0"]
+
+position = Vector2( -0.237839, -4.75654 )
+remote_path = NodePath("../../../../../Sprites/Eyes")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Eyes_closed" type="RemoteTransform2D" parent="Hip/Torso/Neck/Head" index="1"]
+
+position = Vector2( -0.237839, -4.04306 )
+remote_path = NodePath("../../../../../Sprites/Eyes_closed")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Eyebrows" type="RemoteTransform2D" parent="Hip/Torso/Neck/Head" index="2"]
+
+position = Vector2( -0.951309, -14.5075 )
+remote_path = NodePath("../../../../../Sprites/Eyebrows")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Mouth" type="RemoteTransform2D" parent="Hip/Torso/Neck/Head" index="3"]
+
+position = Vector2( 2.26111, 29.5518 )
+remote_path = NodePath("../../../../../Sprites/Mouth")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Pants_right" type="RemoteTransform2D" parent="Hip" index="1"]
+
+position = Vector2( -12.7639, -10.7018 )
+rotation = 0.0165611
+scale = Vector2( 1.00065, 1 )
+remote_path = NodePath("../../Sprites/Pants_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Foot_right" type="RemoteTransform2D" parent="Hip/Pants_right" index="0"]
+
+position = Vector2( -1.38193, 27.0979 )
+scale = Vector2( 0.999047, 1 )
+remote_path = NodePath("../../../Sprites/Foot_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="End" type="Position2D" parent="Hip/Pants_right/Foot_right" index="0"]
+
+position = Vector2( -2.27272, 20.6293 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Pants_left" type="RemoteTransform2D" parent="Hip" index="2"]
+
+position = Vector2( 11.0147, -7.29153 )
+scale = Vector2( 1.00067, 1 )
+remote_path = NodePath("../../Sprites/Pants_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Foot_left" type="RemoteTransform2D" parent="Hip/Pants_left" index="0"]
+
+position = Vector2( 2.26496, 20.9766 )
+scale = Vector2( 0.999325, 1 )
+remote_path = NodePath("../../../Sprites/Foot_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="End" type="Position2D" parent="Hip/Pants_left/Foot_left" index="0"]
+
+position = Vector2( 6.46852, 24.3007 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+
+root_node = NodePath("..")
+autoplay = "Idle"
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/Base = SubResource( 1 )
+anims/Idle = SubResource( 2 )
+blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
 
 

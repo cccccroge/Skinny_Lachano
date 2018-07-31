@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Skinny Lachano"
-run/main_scene="res://level01/Chapter1.tscn"
+run/main_scene="res://characters/Lachano/Lachano.tscn"
 config/icon="res://icon.png"
 
 [display]
