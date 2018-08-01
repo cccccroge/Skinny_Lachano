@@ -1,17 +1,17 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://characters/Lachano/Lachano.gd" type="Script" id=1]
 [ext_resource path="res://characters/Lachano/front/front_0006_neck.png" type="Texture" id=2]
-[ext_resource path="res://characters/Lachano/front/front_0013_left_hand_up.png" type="Texture" id=3]
-[ext_resource path="res://characters/Lachano/front/front_0011_right_hand_up.png" type="Texture" id=4]
-[ext_resource path="res://characters/Lachano/front/front_0012_left_hand_down.png" type="Texture" id=5]
-[ext_resource path="res://characters/Lachano/front/front_0011_right_hand_down.png" type="Texture" id=6]
-[ext_resource path="res://characters/Lachano/front/front_0009_left_foot.png" type="Texture" id=7]
-[ext_resource path="res://characters/Lachano/front/front_0008_right_foot.png" type="Texture" id=8]
-[ext_resource path="res://characters/Lachano/front/front_0007_pant.png" type="Texture" id=9]
-[ext_resource path="res://characters/Lachano/front/front_0007_pant_left.png" type="Texture" id=10]
-[ext_resource path="res://characters/Lachano/front/front_0007_pant_right.png" type="Texture" id=11]
-[ext_resource path="res://characters/Lachano/front/front_0005_torsle.png" type="Texture" id=12]
+[ext_resource path="res://characters/Lachano/front/front_0011_right_hand_up.png" type="Texture" id=3]
+[ext_resource path="res://characters/Lachano/front/front_0011_right_hand_down.png" type="Texture" id=4]
+[ext_resource path="res://characters/Lachano/front/front_0009_left_foot.png" type="Texture" id=5]
+[ext_resource path="res://characters/Lachano/front/front_0008_right_foot.png" type="Texture" id=6]
+[ext_resource path="res://characters/Lachano/front/front_0007_pant.png" type="Texture" id=7]
+[ext_resource path="res://characters/Lachano/front/front_0007_pant_left.png" type="Texture" id=8]
+[ext_resource path="res://characters/Lachano/front/front_0007_pant_right.png" type="Texture" id=9]
+[ext_resource path="res://characters/Lachano/front/front_0005_torsle.png" type="Texture" id=10]
+[ext_resource path="res://characters/Lachano/front/front_0012_left_hand_down.png" type="Texture" id=11]
+[ext_resource path="res://characters/Lachano/front/front_0013_left_hand_up.png" type="Texture" id=12]
 [ext_resource path="res://characters/Lachano/front/left_torsle.png" type="Texture" id=13]
 [ext_resource path="res://characters/Lachano/front/right_torsle.png" type="Texture" id=14]
 [ext_resource path="res://characters/Lachano/front/front_0004_head.png" type="Texture" id=15]
@@ -19,6 +19,23 @@
 [ext_resource path="res://characters/Lachano/front/front_0003_eyes_closed.png" type="Texture" id=17]
 [ext_resource path="res://characters/Lachano/front/front_0001_mouth.png" type="Texture" id=18]
 [ext_resource path="res://characters/Lachano/front/front_0002_brow.png" type="Texture" id=19]
+[ext_resource path="res://characters/Lachano/side/side_0017_neck.png" type="Texture" id=20]
+[ext_resource path="res://characters/Lachano/side/side_0016_left_arm.png" type="Texture" id=21]
+[ext_resource path="res://characters/Lachano/side/side_0015_left_hand.png" type="Texture" id=22]
+[ext_resource path="res://characters/Lachano/side/side_0014_left_torsle.png" type="Texture" id=23]
+[ext_resource path="res://characters/Lachano/side/side_0010_panpan.png" type="Texture" id=24]
+[ext_resource path="res://characters/Lachano/side/side_0013_left-leg.png" type="Texture" id=25]
+[ext_resource path="res://characters/Lachano/side/side_0012_right_leg.png" type="Texture" id=26]
+[ext_resource path="res://characters/Lachano/side/side_0011_left_panpan.png" type="Texture" id=27]
+[ext_resource path="res://characters/Lachano/side/side_0009_right_panpan.png" type="Texture" id=28]
+[ext_resource path="res://characters/Lachano/side/side_0004_torsle.png" type="Texture" id=29]
+[ext_resource path="res://characters/Lachano/side/side_0003_right_arm.png" type="Texture" id=30]
+[ext_resource path="res://characters/Lachano/side/side_0002_right_hand.png" type="Texture" id=31]
+[ext_resource path="res://characters/Lachano/side/side_0001_right_torsle.png" type="Texture" id=32]
+[ext_resource path="res://characters/Lachano/side/side_0008_face.png" type="Texture" id=33]
+[ext_resource path="res://characters/Lachano/side/side_0007_teeth.png" type="Texture" id=34]
+[ext_resource path="res://characters/Lachano/side/side_0006_eyes.png" type="Texture" id=35]
+[ext_resource path="res://characters/Lachano/side/side_0005_brow.png" type="Texture" id=36]
 
 [sub_resource type="Animation" id=1]
 
@@ -34,7 +51,7 @@ length = 2.0
 loop = true
 step = 0.05
 tracks/0/type = "value"
-tracks/0/path = NodePath("Hip/Torso:rotation_degrees")
+tracks/0/path = NodePath("Hip_front/Torso:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -46,7 +63,7 @@ tracks/0/keys = {
 "values": [ 0.0, 0.0, 0.0, 0.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Hip/Torso:position")
+tracks/1/path = NodePath("Hip_front/Torso:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -58,7 +75,7 @@ tracks/1/keys = {
 "values": [ Vector2( -2.55464, -1.21761 ), Vector2( -2.15742, -8.31631 ), Vector2( -2.55464, -1.21761 ), Vector2( -2.15742, -8.31631 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Hip/Torso:scale")
+tracks/2/path = NodePath("Hip_front/Torso:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -70,7 +87,7 @@ tracks/2/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1.02323 ), Vector2( 1, 1 ), Vector2( 1, 1.02323 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Hip/Torso/Shirt_right/Hand_right:position")
+tracks/3/path = NodePath("Hip_front/Torso/Shirt_right/Hand_right:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -82,7 +99,7 @@ tracks/3/keys = {
 "values": [ Vector2( -19.8978, 35.9034 ), Vector2( -19.8978, 35.9034 ), Vector2( -19.8978, 35.9034 ), Vector2( -19.8978, 35.9034 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Hip/Torso/Shirt_right/Hand_right:rotation_degrees")
+tracks/4/path = NodePath("Hip_front/Torso/Shirt_right/Hand_right:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -94,7 +111,7 @@ tracks/4/keys = {
 "values": [ -5.39031, -16.6644, -5.39031, -16.6644 ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Hip/Torso/Shirt_right/Hand_right:scale")
+tracks/5/path = NodePath("Hip_front/Torso/Shirt_right/Hand_right:scale")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -106,7 +123,7 @@ tracks/5/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Hip/Torso/Shirt_right:position")
+tracks/6/path = NodePath("Hip_front/Torso/Shirt_right:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -118,7 +135,7 @@ tracks/6/keys = {
 "values": [ Vector2( -18.7415, -44.4057 ), Vector2( -18.7415, -44.4057 ), Vector2( -18.7415, -44.4057 ), Vector2( -18.7415, -44.4057 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Hip/Torso/Shirt_right:rotation_degrees")
+tracks/7/path = NodePath("Hip_front/Torso/Shirt_right:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -130,7 +147,7 @@ tracks/7/keys = {
 "values": [ -7.2976, 3.97644, -7.2976, 3.97644 ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("Hip/Torso/Shirt_right:scale")
+tracks/8/path = NodePath("Hip_front/Torso/Shirt_right:scale")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
@@ -142,7 +159,7 @@ tracks/8/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("Hip/Torso/Shirt_left/Hand_left:position")
+tracks/9/path = NodePath("Hip_front/Torso/Shirt_left/Hand_left:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -154,7 +171,7 @@ tracks/9/keys = {
 "values": [ Vector2( 19.7468, 31.552 ), Vector2( 19.7468, 31.552 ), Vector2( 19.7468, 31.552 ), Vector2( 19.7468, 31.552 ) ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("Hip/Torso/Shirt_left/Hand_left:rotation_degrees")
+tracks/10/path = NodePath("Hip_front/Torso/Shirt_left/Hand_left:rotation_degrees")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
@@ -166,7 +183,7 @@ tracks/10/keys = {
 "values": [ -8.9678, 5.10041, -8.9678, 5.10041 ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("Hip/Torso/Shirt_left/Hand_left:scale")
+tracks/11/path = NodePath("Hip_front/Torso/Shirt_left/Hand_left:scale")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
@@ -178,7 +195,7 @@ tracks/11/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath("Hip/Torso/Shirt_left:position")
+tracks/12/path = NodePath("Hip_front/Torso/Shirt_left:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
@@ -190,7 +207,7 @@ tracks/12/keys = {
 "values": [ Vector2( 21.1494, -43.3556 ), Vector2( 21.1494, -43.3556 ), Vector2( 21.1494, -43.3556 ), Vector2( 21.1494, -43.3556 ) ]
 }
 tracks/13/type = "value"
-tracks/13/path = NodePath("Hip/Torso/Shirt_left:rotation_degrees")
+tracks/13/path = NodePath("Hip_front/Torso/Shirt_left:rotation_degrees")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
@@ -202,7 +219,7 @@ tracks/13/keys = {
 "values": [ 8.9678, -5.10041, 8.9678, -5.10041 ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("Hip/Torso/Shirt_left:scale")
+tracks/14/path = NodePath("Hip_front/Torso/Shirt_left:scale")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
@@ -214,7 +231,7 @@ tracks/14/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
 }
 tracks/15/type = "value"
-tracks/15/path = NodePath("Hip/Pants_right/Foot_right:position")
+tracks/15/path = NodePath("Hip_front/Pants_right/Foot_right:position")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
@@ -226,7 +243,7 @@ tracks/15/keys = {
 "values": [ Vector2( -1.3986, 27.0979 ), Vector2( -0.409968, 27.0979 ), Vector2( -1.3986, 27.0979 ), Vector2( -0.409968, 27.0979 ) ]
 }
 tracks/16/type = "value"
-tracks/16/path = NodePath("Hip/Pants_right/Foot_right:rotation_degrees")
+tracks/16/path = NodePath("Hip_front/Pants_right/Foot_right:rotation_degrees")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
@@ -238,7 +255,7 @@ tracks/16/keys = {
 "values": [ 0.0, 0.0, 0.0, 0.0 ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath("Hip/Pants_right/Foot_right:scale")
+tracks/17/path = NodePath("Hip_front/Pants_right/Foot_right:scale")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
@@ -250,7 +267,7 @@ tracks/17/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 0.943511, 1 ), Vector2( 1, 1 ), Vector2( 0.943511, 1 ) ]
 }
 tracks/18/type = "value"
-tracks/18/path = NodePath("Hip/Pants_right:position")
+tracks/18/path = NodePath("Hip_front/Pants_right:position")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/imported = false
@@ -262,7 +279,7 @@ tracks/18/keys = {
 "values": [ Vector2( -12.7534, -10.7017 ), Vector2( -13.3795, -10.712 ), Vector2( -12.7534, -10.7017 ), Vector2( -13.3795, -10.712 ) ]
 }
 tracks/19/type = "value"
-tracks/19/path = NodePath("Hip/Pants_right:rotation_degrees")
+tracks/19/path = NodePath("Hip_front/Pants_right:rotation_degrees")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/imported = false
@@ -274,7 +291,7 @@ tracks/19/keys = {
 "values": [ 0.94888, 0.94888, 0.94888, 0.94888 ]
 }
 tracks/20/type = "value"
-tracks/20/path = NodePath("Hip/Pants_right:scale")
+tracks/20/path = NodePath("Hip_front/Pants_right:scale")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/imported = false
@@ -286,7 +303,7 @@ tracks/20/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1.03836, 1 ), Vector2( 1, 1 ), Vector2( 1.03836, 1 ) ]
 }
 tracks/21/type = "value"
-tracks/21/path = NodePath("Hip/Pants_left/Foot_left:position")
+tracks/21/path = NodePath("Hip_front/Pants_left/Foot_left:position")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
@@ -298,7 +315,7 @@ tracks/21/keys = {
 "values": [ Vector2( 2.27272, 20.979 ), Vector2( 1.81252, 20.8366 ), Vector2( 2.27272, 20.979 ), Vector2( 1.81252, 20.8366 ) ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("Hip/Pants_left/Foot_left:rotation_degrees")
+tracks/22/path = NodePath("Hip_front/Pants_left/Foot_left:rotation_degrees")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
@@ -310,7 +327,7 @@ tracks/22/keys = {
 "values": [ 0.0, 0.0, 0.0, 0.0 ]
 }
 tracks/23/type = "value"
-tracks/23/path = NodePath("Hip/Pants_left/Foot_left:scale")
+tracks/23/path = NodePath("Hip_front/Pants_left/Foot_left:scale")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/imported = false
@@ -322,7 +339,7 @@ tracks/23/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 0.959952, 1 ), Vector2( 1, 1 ), Vector2( 0.959952, 1 ) ]
 }
 tracks/24/type = "value"
-tracks/24/path = NodePath("Hip/Pants_left:position")
+tracks/24/path = NodePath("Hip_front/Pants_left:position")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
@@ -334,7 +351,7 @@ tracks/24/keys = {
 "values": [ Vector2( 11.0051, -7.29153 ), Vector2( 11.5714, -7.29153 ), Vector2( 11.0051, -7.29153 ), Vector2( 11.5714, -7.29153 ) ]
 }
 tracks/25/type = "value"
-tracks/25/path = NodePath("Hip/Pants_left:rotation_degrees")
+tracks/25/path = NodePath("Hip_front/Pants_left:rotation_degrees")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/imported = false
@@ -346,7 +363,7 @@ tracks/25/keys = {
 "values": [ 0.0, 0.0, 0.0, 0.0 ]
 }
 tracks/26/type = "value"
-tracks/26/path = NodePath("Hip/Pants_left:scale")
+tracks/26/path = NodePath("Hip_front/Pants_left:scale")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/imported = false
@@ -358,7 +375,7 @@ tracks/26/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1.03968, 1 ), Vector2( 1, 1 ), Vector2( 1.03968, 1 ) ]
 }
 tracks/27/type = "value"
-tracks/27/path = NodePath("Sprites/Eyes_closed:visible")
+tracks/27/path = NodePath("Sprites_front/Eyes_closed:visible")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/imported = false
@@ -370,6 +387,349 @@ tracks/27/keys = {
 "values": [ false, false, false, true, false, true, false ]
 }
 
+[sub_resource type="Animation" id=3]
+
+resource_name = "Move"
+length = 1.2
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Hip_front/Torso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -2.55464, -1.21761 ), Vector2( -2.55464, -1.21761 ), Vector2( -2.55464, -1.21761 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Hip_front/Torso:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Hip_front/Torso:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Hip_front/Torso/Shirt_left/Hand_left:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 20.6137, 29.5493 ), Vector2( 21.5542, 32.0155 ), Vector2( 20.6137, 29.5493 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Hip_front/Torso/Shirt_left/Hand_left:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 23.4029, 47.1528, 23.4029 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Hip_front/Torso/Shirt_left/Hand_left:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 0.931802 ), Vector2( 1.03164, 0.875822 ), Vector2( 1, 0.931802 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Hip_front/Torso/Shirt_left:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 9.74304, -48.0164 ), Vector2( 19.8799, -41.4941 ), Vector2( 9.74304, -48.0164 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Hip_front/Torso/Shirt_left:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -22.0969, 23.59, -22.0969 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Hip_front/Torso/Shirt_left:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.959208, 1 ), Vector2( 1.02844, 1.01771 ), Vector2( 0.959208, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Hip_front/Torso/Shirt_right/Hand_right:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.8, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -19.8981, 35.904 ), Vector2( -19.6774, 35.068 ), Vector2( -19.4566, 34.232 ), Vector2( -19.6038, 34.7893 ), Vector2( -19.8981, 35.904 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Hip_front/Torso/Shirt_right/Hand_right:rotation_degrees")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -33.261, -19.4288, -33.261 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Hip_front/Torso/Shirt_right/Hand_right:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.92129, 0.950158 ), Vector2( 1, 1 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Hip_front/Torso/Shirt_right:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.8, 0.9, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18.7415, -46.7302 ), Vector2( -17.6371, -46.2415 ), Vector2( -16.5326, -48.4647 ), Vector2( -17.4626, -46.014 ), Vector2( -17.6371, -46.2415 ), Vector2( -18.7415, -46.7302 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Hip_front/Torso/Shirt_right:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -23.1981, 15.5372, -23.1981 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Hip_front/Torso/Shirt_right:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.882879, 0.930394 ), Vector2( 1, 1 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Hip_front/Pants_left/Foot_left:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 5.82933, 22.0424 ), Vector2( 4.77557, 17.6841 ), Vector2( 5.82933, 22.0424 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Hip_front/Pants_left/Foot_left:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 4.92124, 7.12243, 4.92124 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Hip_front/Pants_left/Foot_left:scale")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.10712, 1.01984 ), Vector2( 1.01281, 0.888667 ), Vector2( 1.10712, 1.01984 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Hip_front/Pants_left:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 11.0051, -9.06596 ), Vector2( 8.86718, -7.92975 ), Vector2( 11.0051, -9.06596 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Hip_front/Pants_left:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 4.19216, 2.08439, 4.19216 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Hip_front/Pants_left:scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 0.944549 ), Vector2( 0.965581, 0.922899 ), Vector2( 1, 0.944549 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Hip_front/Pants_right/Foot_right:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.07476, 23.1414 ), Vector2( -0.68122, 25.3769 ), Vector2( 1.07476, 23.1414 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Hip_front/Pants_right/Foot_right:rotation_degrees")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -7.16828, -15.921, -7.16828 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Hip_front/Pants_right/Foot_right:scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.907883, 0.88697 ), Vector2( 0.984184, 0.954412 ), Vector2( 0.907883, 0.88697 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Hip_front/Pants_right:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -10.6349, -12.1209 ), Vector2( -10.81, -10.0868 ), Vector2( -10.6349, -12.1209 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Hip_front/Pants_right:rotation_degrees")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.948878, 9.38261, 0.948878 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Hip_front/Pants_right:scale")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.934542, 0.954559 ), Vector2( 1.04647, 1.01688 ), Vector2( 0.934542, 0.954559 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Hip_front:position")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 5.77329, 21.0443 ), Vector2( 5.77329, 25.7877 ), Vector2( 5.77329, 20.7808 ), Vector2( 5.77329, 25.7877 ), Vector2( 5.77329, 21.0443 ) ]
+}
+
 [node name="Lachano" type="KinematicBody2D" index="0"]
 
 input_pickable = false
@@ -379,164 +739,181 @@ collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
-"_edit_horizontal_guides_": [ 520.608, -24.7492 ],
-"_edit_vertical_guides_": [ 959.619, 3.53906 ]
+"_edit_horizontal_guides_": [ 520.608, -82.6134, -142.456 ],
+"_edit_vertical_guides_": [ 959.619, 10.322 ]
 }
 BASE_SPEED = 100
 SPEED = 250
 
-[node name="Sprites" type="Node2D" parent="." index="0"]
+[node name="Sprites_front" type="Node2D" parent="." index="0"]
 
 editor/display_folded = true
+visible = false
 position = Vector2( 0, -13.5053 )
 
-[node name="Neck" type="Sprite" parent="Sprites" index="0"]
+[node name="Neck" type="Sprite" parent="Sprites_front" index="0"]
 
-position = Vector2( 4.41448, -3.82343 )
-scale = Vector2( 1, 1.00039 )
+position = Vector2( 4.47712, -12.5177 )
+scale = Vector2( 1, 1.00405 )
 texture = ExtResource( 2 )
 offset = Vector2( -0.425259, -8.48701 )
 
-[node name="Arm_right" type="Sprite" parent="Sprites" index="1"]
+[node name="Arm_left" type="Sprite" parent="Sprites_front" index="1"]
 
-position = Vector2( -24.6139, 20.7594 )
-rotation = -0.124097
-scale = Vector2( 1.00001, 1.00039 )
+position = Vector2( 31.96, 3.16202 )
+rotation = 0.114116
+scale = Vector2( 1.00005, 1.004 )
+z_index = 1
 texture = ExtResource( 3 )
-offset = Vector2( 0.506739, 4.89031 )
-
-[node name="Arm_left" type="Sprite" parent="Sprites" index="2"]
-
-position = Vector2( 31.3581, 12.0801 )
-rotation = 0.152436
-scale = Vector2( 1.00001, 1.00038 )
-texture = ExtResource( 4 )
 offset = Vector2( 2.58406, 5.32539 )
+_sections_unfolded = [ "Z Index" ]
 
-[node name="Hand_right" type="Sprite" parent="Sprites" index="3"]
+[node name="Hand_left" type="Sprite" parent="Sprites_front" index="2"]
 
-position = Vector2( -30.8186, 35.0628 )
-rotation = -0.22153
-scale = Vector2( 1.00002, 1.00037 )
-texture = ExtResource( 5 )
-offset = Vector2( -1.20058, 10.0253 )
-
-[node name="Hand_left" type="Sprite" parent="Sprites" index="4"]
-
-position = Vector2( 39.1035, 32.206 )
-scale = Vector2( 1, 1.00039 )
-texture = ExtResource( 6 )
+position = Vector2( 40.4783, 23.0455 )
+scale = Vector2( 1, 1.00405 )
+z_index = 1
+texture = ExtResource( 4 )
 offset = Vector2( 0.514877, 7.68149 )
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Z Index" ]
 
-[node name="Foot_right" type="Sprite" parent="Sprites" index="5"]
+[node name="Foot_right" type="Sprite" parent="Sprites_front" index="3"]
 
-position = Vector2( -8.82203, 59.0882 )
+position = Vector2( -8.77222, 51.6796 )
 rotation = 0.0165611
-scale = Vector2( 0.999694, 1 )
-texture = ExtResource( 7 )
+scale = Vector2( 0.99677, 1 )
+texture = ExtResource( 5 )
 offset = Vector2( -10.3474, 7.69055 )
 
-[node name="Foot_left" type="Sprite" parent="Sprites" index="6"]
+[node name="Foot_left" type="Sprite" parent="Sprites_front" index="4"]
 
-position = Vector2( 19.0545, 56.4038 )
-scale = Vector2( 0.999993, 1 )
-texture = ExtResource( 8 )
+position = Vector2( 19.0848, 48.972 )
+scale = Vector2( 0.999887, 1 )
+texture = ExtResource( 6 )
 offset = Vector2( 10.5346, 10.1381 )
 
-[node name="Pants_hip" type="Sprite" parent="Sprites" index="7"]
+[node name="Pants_hip" type="Sprite" parent="Sprites_front" index="5"]
 
-position = Vector2( 5.77329, 42.7188 )
-texture = ExtResource( 9 )
+position = Vector2( 5.77329, 35.3094 )
+texture = ExtResource( 7 )
 offset = Vector2( -1.1633, 2.25183 )
 
-[node name="Pants_right" type="Sprite" parent="Sprites" index="8"]
+[node name="Pants_right" type="Sprite" parent="Sprites_front" index="6"]
 
-position = Vector2( -6.99065, 32.0169 )
+position = Vector2( -7.0894, 24.6059 )
 rotation = 0.0165611
-scale = Vector2( 1.00065, 1 )
-texture = ExtResource( 10 )
+scale = Vector2( 1.0067, 1 )
+texture = ExtResource( 8 )
 offset = Vector2( -0.93065, 13.1335 )
 
-[node name="Pants_left" type="Sprite" parent="Sprites" index="9"]
+[node name="Pants_left" type="Sprite" parent="Sprites_front" index="7"]
 
-position = Vector2( 16.788, 35.4272 )
-scale = Vector2( 1.00067, 1 )
-texture = ExtResource( 11 )
+position = Vector2( 16.8772, 28.0179 )
+scale = Vector2( 1.00693, 1 )
+texture = ExtResource( 9 )
 offset = Vector2( 2.63315, 9.71964 )
 
-[node name="Shirt_body" type="Sprite" parent="Sprites" index="10"]
+[node name="Shirt_body" type="Sprite" parent="Sprites_front" index="8"]
 
-position = Vector2( 3.22535, 41.3815 )
-scale = Vector2( 1, 1.00039 )
-texture = ExtResource( 12 )
+position = Vector2( 3.28799, 32.8527 )
+scale = Vector2( 1, 1.00405 )
+texture = ExtResource( 10 )
 offset = Vector2( -0.680145, -23.5388 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Shirt_right" type="Sprite" parent="Sprites" index="11"]
+[node name="Hand_right" type="Sprite" parent="Sprites_front" index="9"]
 
-position = Vector2( -15.5161, -3.04159 )
-rotation = -0.124097
-scale = Vector2( 1.00001, 1.00039 )
+position = Vector2( -31.9303, 26.0158 )
+rotation = -0.222315
+scale = Vector2( 1.0002, 1.00386 )
+z_index = 1
+texture = ExtResource( 11 )
+offset = Vector2( -1.20058, 10.0253 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="Arm_right" type="Sprite" parent="Sprites_front" index="10"]
+
+position = Vector2( -25.285, 11.8602 )
+rotation = -0.093396
+scale = Vector2( 1.00004, 1.00402 )
+texture = ExtResource( 12 )
+offset = Vector2( 0.506739, 4.89031 )
+
+[node name="Shirt_right" type="Sprite" parent="Sprites_front" index="11"]
+
+position = Vector2( -15.4535, -11.733 )
+rotation = -0.093396
+scale = Vector2( 1.00004, 1.00402 )
 texture = ExtResource( 13 )
 offset = Vector2( -11.2714, 12.2302 )
 
-[node name="Shirt_left" type="Sprite" parent="Sprites" index="12"]
+[node name="Shirt_left" type="Sprite" parent="Sprites_front" index="12"]
 
-position = Vector2( 24.3747, -1.99107 )
-rotation = 0.152436
-scale = Vector2( 1.00001, 1.00038 )
+position = Vector2( 24.4374, -10.6787 )
+rotation = 0.114116
+scale = Vector2( 1.00005, 1.004 )
+z_index = 1
 texture = ExtResource( 14 )
 offset = Vector2( 9.34015, 9.73459 )
+_sections_unfolded = [ "Z Index" ]
 
-[node name="Head" type="Sprite" parent="Sprites" index="13"]
+[node name="Head" type="Sprite" parent="Sprites_front" index="13"]
 
-position = Vector2( 1.75616, -41.99 )
-scale = Vector2( 1, 1.00039 )
+position = Vector2( 1.81879, -50.8241 )
+scale = Vector2( 1, 1.00405 )
+z_index = 1
 texture = ExtResource( 15 )
+_sections_unfolded = [ "Z Index" ]
 
-[node name="Eyes" type="Sprite" parent="Sprites" index="14"]
+[node name="Eyes" type="Sprite" parent="Sprites_front" index="14"]
 
-position = Vector2( 1.51832, -46.7484 )
-scale = Vector2( 1, 1.00039 )
+position = Vector2( 1.58095, -55.5999 )
+scale = Vector2( 1, 1.00405 )
+z_index = 1
 texture = ExtResource( 16 )
+_sections_unfolded = [ "Z Index" ]
 
-[node name="Eyes_closed" type="Sprite" parent="Sprites" index="15"]
+[node name="Eyes_closed" type="Sprite" parent="Sprites_front" index="15"]
 
 visible = false
-position = Vector2( 1.51832, -46.0347 )
-scale = Vector2( 1, 1.00039 )
+position = Vector2( 1.58095, -54.8836 )
+scale = Vector2( 1, 1.00405 )
+z_index = 1
 texture = ExtResource( 17 )
-_sections_unfolded = [ "Visibility" ]
+_sections_unfolded = [ "Visibility", "Z Index" ]
 
-[node name="Mouth" type="Sprite" parent="Sprites" index="16"]
+[node name="Mouth" type="Sprite" parent="Sprites_front" index="16"]
 
-position = Vector2( 4.01726, -12.4267 )
-scale = Vector2( 1, 1.00039 )
+position = Vector2( 4.0799, -21.1525 )
+scale = Vector2( 1, 1.00405 )
+z_index = 1
 texture = ExtResource( 18 )
+_sections_unfolded = [ "Z Index" ]
 
-[node name="Eyebrows" type="Sprite" parent="Sprites" index="17"]
+[node name="Eyebrows" type="Sprite" parent="Sprites_front" index="17"]
 
-position = Vector2( 0.804846, -56.5032 )
-scale = Vector2( 1, 1.00039 )
+position = Vector2( 0.867476, -65.3904 )
+scale = Vector2( 1, 1.00405 )
+z_index = 1
 texture = ExtResource( 19 )
+_sections_unfolded = [ "Z Index" ]
 
-[node name="Hip" type="RemoteTransform2D" parent="." index="1"]
+[node name="Hip_front" type="RemoteTransform2D" parent="." index="1"]
 
 editor/display_folded = true
 visible = false
-position = Vector2( 5.77329, 29.2135 )
-remote_path = NodePath("../Sprites/Pants_hip")
+position = Vector2( 5.77329, 21.8041 )
+remote_path = NodePath("../Sprites_front/Pants_hip")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
 
-[node name="Torso" type="RemoteTransform2D" parent="Hip" index="0"]
+[node name="Torso" type="RemoteTransform2D" parent="Hip_front" index="0"]
 
-position = Vector2( -2.54794, -1.33732 )
-scale = Vector2( 1, 1.00039 )
-remote_path = NodePath("../../Sprites/Shirt_body")
+position = Vector2( -2.48531, -2.45669 )
+scale = Vector2( 1, 1.00405 )
+remote_path = NodePath("../../Sprites_front/Shirt_body")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
@@ -546,11 +923,11 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Shirt_right" type="RemoteTransform2D" parent="Hip/Torso" index="0"]
+[node name="Shirt_right" type="RemoteTransform2D" parent="Hip_front/Torso" index="0"]
 
 position = Vector2( -18.7415, -44.4057 )
-rotation = -0.124049
-remote_path = NodePath("../../../Sprites/Shirt_right")
+rotation = -0.093021
+remote_path = NodePath("../../../Sprites_front/Shirt_right")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
@@ -560,21 +937,20 @@ __meta__ = {
 "_edit_ik_": true
 }
 
-[node name="Arm_right" type="RemoteTransform2D" parent="Hip/Torso/Shirt_right" index="0"]
+[node name="Arm_right" type="RemoteTransform2D" parent="Hip_front/Torso/Shirt_right" index="0"]
 
 position = Vector2( -11.9716, 22.4832 )
-remote_path = NodePath("../../../../Sprites/Arm_right")
+remote_path = NodePath("../../../../Sprites_front/Arm_right")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
 
-[node name="Hand_right" type="RemoteTransform2D" parent="Hip/Torso/Shirt_right" index="1"]
+[node name="Hand_right" type="RemoteTransform2D" parent="Hip_front/Torso/Shirt_right" index="1"]
 
 position = Vector2( -19.8978, 35.9034 )
-rotation = -0.0973969
-scale = Vector2( 1, 1 )
-remote_path = NodePath("../../../../Sprites/Hand_right")
+rotation = -0.128425
+remote_path = NodePath("../../../../Sprites_front/Hand_right")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
@@ -583,18 +959,18 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Position2D" type="Position2D" parent="Hip/Torso/Shirt_right/Hand_right" index="0"]
+[node name="Position2D" type="Position2D" parent="Hip_front/Torso/Shirt_right/Hand_right" index="0"]
 
 position = Vector2( -0.679348, 18.3009 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Shirt_left" type="RemoteTransform2D" parent="Hip/Torso" index="1"]
+[node name="Shirt_left" type="RemoteTransform2D" parent="Hip_front/Torso" index="1"]
 
 position = Vector2( 21.1494, -43.3556 )
-rotation = 0.152377
-remote_path = NodePath("../../../Sprites/Shirt_left")
+rotation = 0.113659
+remote_path = NodePath("../../../Sprites_front/Shirt_left")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
@@ -604,39 +980,41 @@ __meta__ = {
 "_edit_ik_": true
 }
 
-[node name="Arm_left" type="RemoteTransform2D" parent="Hip/Torso/Shirt_left" index="0"]
+[node name="Arm_left" type="RemoteTransform2D" parent="Hip_front/Torso/Shirt_left" index="0"]
 
 position = Vector2( 9.03745, 12.8427 )
-remote_path = NodePath("../../../../Sprites/Arm_left")
+remote_path = NodePath("../../../../Sprites_front/Arm_left")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
+_sections_unfolded = [ "Z Index" ]
 
-[node name="Hand_left" type="RemoteTransform2D" parent="Hip/Torso/Shirt_left" index="1"]
+[node name="Hand_left" type="RemoteTransform2D" parent="Hip_front/Torso/Shirt_left" index="1"]
 
 position = Vector2( 19.7468, 31.552 )
-rotation = -0.152377
-remote_path = NodePath("../../../../Sprites/Hand_left")
+rotation = -0.113659
+remote_path = NodePath("../../../../Sprites_front/Hand_left")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
+_sections_unfolded = [ "Z Index" ]
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Position2D" type="Position2D" parent="Hip/Torso/Shirt_left/Hand_left" index="0"]
+[node name="Position2D" type="Position2D" parent="Hip_front/Torso/Shirt_left/Hand_left" index="0"]
 
 position = Vector2( 0.858566, 15.8833 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Neck" type="RemoteTransform2D" parent="Hip/Torso" index="2"]
+[node name="Neck" type="RemoteTransform2D" parent="Hip_front/Torso" index="2"]
 
 position = Vector2( 1.18913, -45.1872 )
-remote_path = NodePath("../../../Sprites/Neck")
+remote_path = NodePath("../../../Sprites_front/Neck")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
@@ -645,91 +1023,93 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Head" type="RemoteTransform2D" parent="Hip/Torso/Neck" index="0"]
+[node name="Head" type="RemoteTransform2D" parent="Hip_front/Torso/Neck" index="0"]
 
 position = Vector2( -2.65833, -38.1517 )
-remote_path = NodePath("../../../../Sprites/Head")
+remote_path = NodePath("../../../../Sprites_front/Head")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
 
-[node name="Eyes" type="RemoteTransform2D" parent="Hip/Torso/Neck/Head" index="0"]
+[node name="Eyes" type="RemoteTransform2D" parent="Hip_front/Torso/Neck/Head" index="0"]
 
 position = Vector2( -0.237839, -4.75654 )
-remote_path = NodePath("../../../../../Sprites/Eyes")
+remote_path = NodePath("../../../../../Sprites_front/Eyes")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
 
-[node name="Eyes_closed" type="RemoteTransform2D" parent="Hip/Torso/Neck/Head" index="1"]
+[node name="Eyes_closed" type="RemoteTransform2D" parent="Hip_front/Torso/Neck/Head" index="1"]
 
 position = Vector2( -0.237839, -4.04306 )
-remote_path = NodePath("../../../../../Sprites/Eyes_closed")
+remote_path = NodePath("../../../../../Sprites_front/Eyes_closed")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
 
-[node name="Eyebrows" type="RemoteTransform2D" parent="Hip/Torso/Neck/Head" index="2"]
+[node name="Eyebrows" type="RemoteTransform2D" parent="Hip_front/Torso/Neck/Head" index="2"]
 
 position = Vector2( -0.951309, -14.5075 )
-remote_path = NodePath("../../../../../Sprites/Eyebrows")
+remote_path = NodePath("../../../../../Sprites_front/Eyebrows")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
 
-[node name="Mouth" type="RemoteTransform2D" parent="Hip/Torso/Neck/Head" index="3"]
+[node name="Mouth" type="RemoteTransform2D" parent="Hip_front/Torso/Neck/Head" index="3"]
 
 position = Vector2( 2.26111, 29.5518 )
-remote_path = NodePath("../../../../../Sprites/Mouth")
+remote_path = NodePath("../../../../../Sprites_front/Mouth")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
 
-[node name="Pants_right" type="RemoteTransform2D" parent="Hip" index="1"]
+[node name="Pants_right" type="RemoteTransform2D" parent="Hip_front" index="1"]
 
-position = Vector2( -12.7639, -10.7018 )
+position = Vector2( -12.8627, -10.7035 )
 rotation = 0.0165611
-scale = Vector2( 1.00065, 1 )
-remote_path = NodePath("../../Sprites/Pants_right")
+scale = Vector2( 1.0067, 1 )
+remote_path = NodePath("../../Sprites_front/Pants_right")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_bone_": true,
 "_edit_ik_": true
 }
 
-[node name="Foot_right" type="RemoteTransform2D" parent="Hip/Pants_right" index="0"]
+[node name="Foot_right" type="RemoteTransform2D" parent="Hip_front/Pants_right" index="0"]
 
-position = Vector2( -1.38193, 27.0979 )
-scale = Vector2( 0.999047, 1 )
-remote_path = NodePath("../../../Sprites/Foot_right")
+position = Vector2( -1.22603, 27.0979 )
+scale = Vector2( 0.99014, 1 )
+remote_path = NodePath("../../../Sprites_front/Foot_right")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
 update_scale = true
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="End" type="Position2D" parent="Hip/Pants_right/Foot_right" index="0"]
+[node name="End" type="Position2D" parent="Hip_front/Pants_right/Foot_right" index="0"]
 
 position = Vector2( -2.27272, 20.6293 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="Pants_left" type="RemoteTransform2D" parent="Hip" index="2"]
+[node name="Pants_left" type="RemoteTransform2D" parent="Hip_front" index="2"]
 
-position = Vector2( 11.0147, -7.29153 )
-scale = Vector2( 1.00067, 1 )
-remote_path = NodePath("../../Sprites/Pants_left")
+position = Vector2( 11.1039, -7.29153 )
+scale = Vector2( 1.00693, 1 )
+remote_path = NodePath("../../Sprites_front/Pants_left")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
@@ -739,11 +1119,11 @@ __meta__ = {
 "_edit_ik_": true
 }
 
-[node name="Foot_left" type="RemoteTransform2D" parent="Hip/Pants_left" index="0"]
+[node name="Foot_left" type="RemoteTransform2D" parent="Hip_front/Pants_left" index="0"]
 
-position = Vector2( 2.26496, 20.9766 )
-scale = Vector2( 0.999325, 1 )
-remote_path = NodePath("../../../Sprites/Foot_left")
+position = Vector2( 2.19239, 20.9541 )
+scale = Vector2( 0.99301, 1 )
+remote_path = NodePath("../../../Sprites_front/Foot_left")
 use_global_coordinates = true
 update_position = true
 update_rotation = true
@@ -752,14 +1132,337 @@ __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="End" type="Position2D" parent="Hip/Pants_left/Foot_left" index="0"]
+[node name="End" type="Position2D" parent="Hip_front/Pants_left/Foot_left" index="0"]
 
-position = Vector2( 6.46852, 24.3007 )
+position = Vector2( 6.08064, 21.6061 )
 __meta__ = {
 "_edit_bone_": true
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+[node name="Sprites_side" type="Node2D" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 2.64075, 20.2459 )
+
+[node name="Neck" type="Sprite" parent="Sprites_side" index="0"]
+
+position = Vector2( -5.26865, -42.1452 )
+texture = ExtResource( 20 )
+
+[node name="Arm_left" type="Sprite" parent="Sprites_side" index="1"]
+
+position = Vector2( -18.7262, -34.2614 )
+texture = ExtResource( 21 )
+offset = Vector2( -0.377533, 12.729 )
+
+[node name="Hand_left" type="Sprite" parent="Sprites_side" index="2"]
+
+position = Vector2( -21.7791, -12.3882 )
+texture = ExtResource( 22 )
+offset = Vector2( 1.26081, 9.53381 )
+
+[node name="Shirt_left" type="Sprite" parent="Sprites_side" index="3"]
+
+position = Vector2( -11.7184, -46.817 )
+texture = ExtResource( 23 )
+offset = Vector2( -3.77277, 11.835 )
+
+[node name="Pants_hip" type="Sprite" parent="Sprites_side" index="4"]
+
+position = Vector2( -0.304825, 3.69727 )
+texture = ExtResource( 24 )
+offset = Vector2( 2.06702, 0.325001 )
+
+[node name="Leg_left" type="Sprite" parent="Sprites_side" index="5"]
+
+position = Vector2( -7.60983, 17.9488 )
+texture = ExtResource( 25 )
+offset = Vector2( 0.003654, 10.911 )
+
+[node name="Leg_right" type="Sprite" parent="Sprites_side" index="6"]
+
+position = Vector2( 5.78699, 19.0456 )
+texture = ExtResource( 26 )
+offset = Vector2( 2.12495, 11.0891 )
+
+[node name="Pants_left" type="Sprite" parent="Sprites_side" index="7"]
+
+position = Vector2( -6.81927, 3.19159 )
+texture = ExtResource( 27 )
+offset = Vector2( -0.288338, 8.69579 )
+
+[node name="Pants_right" type="Sprite" parent="Sprites_side" index="8"]
+
+position = Vector2( 3.74296, 9.05319 )
+texture = ExtResource( 28 )
+offset = Vector2( -1.02824, 5.52901 )
+
+[node name="Shirt_body" type="Sprite" parent="Sprites_side" index="9"]
+
+position = Vector2( -1.1808, -13.2382 )
+texture = ExtResource( 29 )
+offset = Vector2( 1.48306, -13.5681 )
+
+[node name="Arm_right" type="Sprite" parent="Sprites_side" index="10"]
+
+position = Vector2( 10.5212, -31.5094 )
+texture = ExtResource( 30 )
+offset = Vector2( 0.680033, 12.3692 )
+
+[node name="Hand_right" type="Sprite" parent="Sprites_side" index="11"]
+
+position = Vector2( 15.813, -6.47487 )
+texture = ExtResource( 31 )
+offset = Vector2( 0.725449, 9.23708 )
+
+[node name="Shirt_right" type="Sprite" parent="Sprites_side" index="12"]
+
+position = Vector2( 2.87913, -42.3137 )
+texture = ExtResource( 32 )
+offset = Vector2( 2.00603, 10.6173 )
+
+[node name="Head" type="Sprite" parent="Sprites_side" index="13"]
+
+position = Vector2( -0.525284, -55.0577 )
+texture = ExtResource( 33 )
+offset = Vector2( -3.77158, -37.6812 )
+
+[node name="Teeth" type="Sprite" parent="Sprites_side" index="14"]
+
+position = Vector2( 22.6646, -61.9092 )
+texture = ExtResource( 34 )
+
+[node name="Eye" type="Sprite" parent="Sprites_side" index="15"]
+
+position = Vector2( 11.5967, -94.8494 )
+texture = ExtResource( 35 )
+
+[node name="Eyebrow" type="Sprite" parent="Sprites_side" index="16"]
+
+position = Vector2( 7.64386, -104.073 )
+texture = ExtResource( 36 )
+
+[node name="Hip_side" type="RemoteTransform2D" parent="." index="3"]
+
+position = Vector2( 2.33592, 23.9432 )
+remote_path = NodePath("../Sprites_side/Pants_hip")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Torso" type="RemoteTransform2D" parent="Hip_side" index="0"]
+
+position = Vector2( -0.875977, -16.9354 )
+remote_path = NodePath("../../Sprites_side/Shirt_body")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Neck" type="RemoteTransform2D" parent="Hip_side/Torso" index="0"]
+
+position = Vector2( -4.08784, -28.907 )
+remote_path = NodePath("../../../Sprites_side/Neck")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Shirt_left" type="RemoteTransform2D" parent="Hip_side/Torso/Neck" index="0"]
+
+position = Vector2( -6.4498, -4.67184 )
+remote_path = NodePath("../../../../Sprites_side/Shirt_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Arm_left" type="RemoteTransform2D" parent="Hip_side/Torso/Neck/Shirt_left" index="0"]
+
+position = Vector2( -7.00777, 12.5556 )
+remote_path = NodePath("../../../../../Sprites_side/Arm_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Hand_left" type="RemoteTransform2D" parent="Hip_side/Torso/Neck/Shirt_left" index="1"]
+
+position = Vector2( -10.0606, 34.4288 )
+remote_path = NodePath("../../../../../Sprites_side/Hand_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="End" type="Position2D" parent="Hip_side/Torso/Neck/Shirt_left/Hand_left" index="0"]
+
+position = Vector2( 1.16797, 21.0233 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Shirt_right" type="RemoteTransform2D" parent="Hip_side/Torso/Neck" index="1"]
+
+position = Vector2( 8.14777, -0.168556 )
+remote_path = NodePath("../../../../Sprites_side/Shirt_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Arm_right" type="RemoteTransform2D" parent="Hip_side/Torso/Neck/Shirt_right" index="0"]
+
+position = Vector2( 7.64211, 10.8044 )
+remote_path = NodePath("../../../../../Sprites_side/Arm_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Hand_right" type="RemoteTransform2D" parent="Hip_side/Torso/Neck/Shirt_right" index="1"]
+
+position = Vector2( 12.9339, 35.8389 )
+remote_path = NodePath("../../../../../Sprites_side/Hand_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="End" type="Position2D" parent="Hip_side/Torso/Neck/Shirt_right/Hand_right" index="0"]
+
+position = Vector2( 1.05408, 20.0276 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Head" type="RemoteTransform2D" parent="Hip_side/Torso/Neck" index="2"]
+
+position = Vector2( 4.74336, -12.9125 )
+remote_path = NodePath("../../../../Sprites_side/Head")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Tooth" type="RemoteTransform2D" parent="Hip_side/Torso/Neck/Head" index="0"]
+
+position = Vector2( 23.1898, -6.85155 )
+remote_path = NodePath("../../../../../Sprites_side/Teeth")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Eye" type="RemoteTransform2D" parent="Hip_side/Torso/Neck/Head" index="1"]
+
+position = Vector2( 12.122, -39.7917 )
+remote_path = NodePath("../../../../../Sprites_side/Eye")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="Eyebrow" type="RemoteTransform2D" parent="Hip_side/Torso/Neck/Head" index="2"]
+
+position = Vector2( 8.16914, -49.0149 )
+remote_path = NodePath("../../../../../Sprites_side/Eyebrow")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+
+[node name="End" type="Position2D" parent="Hip_side/Torso/Neck/Head" index="3"]
+
+[node name="Pants_left" type="RemoteTransform2D" parent="Hip_side" index="1"]
+
+position = Vector2( -6.51445, -0.505676 )
+remote_path = NodePath("../../Sprites_side/Pants_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Leg_left" type="RemoteTransform2D" parent="Hip_side/Pants_left" index="0"]
+
+position = Vector2( -0.790558, 14.7572 )
+remote_path = NodePath("../../../Sprites_side/Leg_left")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="End" type="Position2D" parent="Hip_side/Pants_left/Leg_left" index="0"]
+
+position = Vector2( -0.527039, 24.5074 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Pants_right" type="RemoteTransform2D" parent="Hip_side" index="2"]
+
+position = Vector2( 4.04778, 5.35593 )
+remote_path = NodePath("../../Sprites_side/Pants_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Leg_right" type="RemoteTransform2D" parent="Hip_side/Pants_right" index="0"]
+
+position = Vector2( 2.04403, 9.99242 )
+remote_path = NodePath("../../../Sprites_side/Leg_right")
+use_global_coordinates = true
+update_position = true
+update_rotation = true
+update_scale = true
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="End" type="Position2D" parent="Hip_side/Pants_right/Leg_right" index="0"]
+
+position = Vector2( 1.84465, 25.0345 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Animplayer" type="AnimationPlayer" parent="." index="4"]
 
 root_node = NodePath("..")
 autoplay = "Idle"
@@ -768,6 +1471,7 @@ playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/Base = SubResource( 1 )
 anims/Idle = SubResource( 2 )
+anims/Move = SubResource( 3 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 
