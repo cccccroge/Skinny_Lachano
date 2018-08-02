@@ -63,7 +63,7 @@ flags = 4
 gradient = SubResource( 9 )
 width = 500
 
-[node name="Chapter1" type="Node2D" index="0"]
+[node name="Chapter1" type="Node2D"]
 
 _sections_unfolded = [ "Visibility" ]
 __meta__ = {
