@@ -1,27 +1,24 @@
 extends Node2D
 
-# sentences format 
-# {
-#	"sentences" : [
-#		"text1", "text2", .... 	
-#	]
-# }
-
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
+
+# path = res://dialogue/texts/*.csv
+
 var fd : File
 var textLabel : RichTextLabel
-var sentences #Variant
+var sentences = {}#Variant
 var nextCount = 0
 
+# init只有初始化參數，還沒進入到 scene tree
 func _init():
-	textLabel = get_node("Background/RichTextLabel")
-	textLabel.bbcode_enabled = true;
 	pass
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	textLabel = get_node("ColorRect/RichTextLabel")
+	textLabel.bbcode_enabled = true;
 	pass # Replace with function body.
 
 func _enter_tree():
@@ -36,15 +33,25 @@ func setDialogScript(path):
 	fd = File.new()
 	fd.open(path, _File.READ)
 	
-	var parseRes = JSON.parse(fd.get_as_text())
+	while !fd.eof_reached():
+		var csvLines = Array(fd.get_csv_line())
+		sentences[sentences.size()] = csvLines
+	
 	fd.close()
 	
-	if(parseRes.error != OK):
-		print("[Debug] : " + sentences.error_string)
-	
-	sentences = parseRes.result['sentences']
+	print("[Debug] \n" + sentences)
 	
 func nextSentence():
 	
 	textLabel.bbcode_text = sentences[nextCount]
 	nextCount = nextCount + 1
+
+func setSentenceIndex(index):
+
+	textLabel.bbcode_text = sentences[index]
+	nextCount = index
+
+func getCurrentSentenceIndex():
+	return nextCount
+
+
