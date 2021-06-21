@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/dialogue/dialogue.gd" type="Script" id=1]
+[ext_resource path="res://font/NanumPenScript-Regular.tres" type="DynamicFont" id=2]
+
+[node name="Dialogue" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 278.0
+margin_top = 117.0
+margin_right = 1755.0
+margin_bottom = 432.0
+color = Color( 0.0470588, 0.0392157, 0.0392157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+margin_left = 23.7161
+margin_top = 10.6504
+margin_right = 1455.72
+margin_bottom = 296.65
+custom_fonts/normal_font = ExtResource( 2 )
+text = "你不好啊！"
+__meta__ = {
+"_edit_use_anchors_": false
+}
