@@ -6,6 +6,7 @@ onready var intestinal_progress_bar := $UiLayer/VBoxContainer2/HBoxContainer3/In
 onready var decre_health_btn := $UiLayer/VBoxContainer/DecreHealthBtn
 onready var incre_health_btn := $UiLayer/VBoxContainer/IncreHealthBtn
 onready var lachano_status := $ViewportContainer/Viewport/Obstacles/Lachano/MainStatuses
+onready var shaded_scene := $SceneLayer/ShadedScene
 
 func _ready():
 	init_status_ui()
@@ -29,8 +30,16 @@ func connect_signals():
 		lachano_status, "alter_status_by", ["health", 5])
 	_err = lachano_status.connect("status_altered", \
 		self, "update_progress_bars")
+	_err = lachano_status.connect("status_altered", \
+		self, "update_low_health_shader")
 
 func update_progress_bars():
 	health_progress_bar.value = lachano_status.status["health"]
 	bone_progress_bar.value = lachano_status.status["bone"]
 	intestinal_progress_bar.value = lachano_status.status["intestinal_juice"]
+
+func update_low_health_shader():
+	var health_percent = \
+		lachano_status.status["health"] /lachano_status.max_status["health"]
+	var intensity = 1 - health_percent
+	shaded_scene.material.set_shader_param("overall_intensity", intensity)
