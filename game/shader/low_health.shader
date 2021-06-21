@@ -74,7 +74,7 @@ void fragment() {
 	vec4 dark_edge = vec4(vec3(pow(1.0 - intensity, 3)), 1.0);
 	
 	vec4 base = vec4(chromatic.xyz * 0.5 + blur.xyz * 0.5, 1.0);
-	vec4 greyed = grey_scale(base, grey_intensity);
+	vec4 greyed = grey_scale(base, grey_intensity * overall_intensity);
 
 	COLOR = dark_edge * greyed + blood;
 }
