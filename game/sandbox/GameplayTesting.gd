@@ -5,7 +5,7 @@ onready var bone_progress_bar := $UiLayer/VBoxContainer2/HBoxContainer2/BoneBar
 onready var intestinal_progress_bar := $UiLayer/VBoxContainer2/HBoxContainer3/IntestinalBar
 onready var decre_health_btn := $UiLayer/VBoxContainer/DecreHealthBtn
 onready var incre_health_btn := $UiLayer/VBoxContainer/IncreHealthBtn
-onready var lachano_status := $SceneLayer/Obstacles/Lachano/MainStatuses
+onready var lachano_status := $ViewportContainer/Viewport/Obstacles/Lachano/MainStatuses
 
 func _ready():
 	init_status_ui()

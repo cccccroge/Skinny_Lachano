@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Skinny Lachano"
-run/main_scene="res://level01/Chapter1.tscn"
+run/main_scene="res://characters/Lachano/Lachano.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -53,5 +53,6 @@ char_down={
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 environment/default_clear_color=Color( 0.507813, 0.507813, 0.507813, 1 )
 environment/default_environment="res://default_env.tres"
