@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://level01/scene/TilesetLaboratory.tres" type="TileSet" id=1]
 [ext_resource path="res://characters/Lachano/Lachano.tscn" type="PackedScene" id=2]
@@ -6,44 +6,50 @@
 [ext_resource path="res://level01/object/ruler_and_scissor.png" type="Texture" id=4]
 [ext_resource path="res://level01/object/Candle.tscn" type="PackedScene" id=5]
 [ext_resource path="res://level01/scene/light_1.png" type="Texture" id=6]
+[ext_resource path="res://level01/Chapter1.gd" type="Script" id=7]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 
-[sub_resource type="CanvasItemMaterial" id=2]
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 557.885
+height = 0.0
 
-[sub_resource type="Gradient" id=3]
+[sub_resource type="CanvasItemMaterial" id=3]
+
+[sub_resource type="Gradient" id=4]
 offsets = PoolRealArray( 0, 0.505263, 0.631579, 1 )
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=4]
-gradient = SubResource( 3 )
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
 width = 1000
 
-[sub_resource type="Gradient" id=5]
+[sub_resource type="Gradient" id=6]
 offsets = PoolRealArray( 0, 0.421053, 0.968421, 1 )
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=6]
-gradient = SubResource( 5 )
+[sub_resource type="GradientTexture" id=7]
+gradient = SubResource( 6 )
 width = 500
 
-[sub_resource type="Gradient" id=7]
+[sub_resource type="Gradient" id=8]
 offsets = PoolRealArray( 0, 0.478947, 0.542105 )
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=8]
-gradient = SubResource( 7 )
+[sub_resource type="GradientTexture" id=9]
+gradient = SubResource( 8 )
 width = 500
 
-[sub_resource type="Gradient" id=9]
+[sub_resource type="Gradient" id=10]
 offsets = PoolRealArray( 0, 0.205263, 0.394737, 1 )
 colors = PoolColorArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1 )
 
-[sub_resource type="GradientTexture" id=10]
-gradient = SubResource( 9 )
+[sub_resource type="GradientTexture" id=11]
+gradient = SubResource( 10 )
 width = 500
 
 [node name="Chapter1" type="Node2D"]
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
 "_edit_vertical_guides_": [  ]
@@ -107,8 +113,14 @@ offset = Vector2( -50, -165 )
 [node name="Candle" parent="TileMap_structure" instance=ExtResource( 5 )]
 position = Vector2( 1582.05, 960.394 )
 
+[node name="Area2D" type="Area2D" parent="TileMap_structure"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap_structure/Area2D"]
+position = Vector2( 1254.88, 488.849 )
+shape = SubResource( 2 )
+
 [node name="Default_light" type="CanvasModulate" parent="."]
-material = SubResource( 2 )
+material = SubResource( 3 )
 color = Color( 0.199219, 0.199219, 0.199219, 1 )
 
 [node name="Light_lab" type="Light2D" parent="."]
@@ -126,27 +138,27 @@ range_height = 100.0
 
 [node name="Dark_grad_left" type="Sprite" parent="."]
 position = Vector2( -40, 530 )
-texture = SubResource( 4 )
+texture = SubResource( 5 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1000, 2000 )
 
 [node name="Dark_grad_bottom" type="Sprite" parent="."]
 position = Vector2( 1229.43, 1225.23 )
 rotation = -1.5708
-texture = SubResource( 6 )
+texture = SubResource( 7 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 500, 2500 )
 
 [node name="Dark_grad_upper" type="Sprite" parent="."]
-position = Vector2( 1230, -227.729 )
+position = Vector2( 1232.52, -227.729 )
 rotation = 1.5708
-texture = SubResource( 8 )
+texture = SubResource( 9 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 500, 2500 )
 
 [node name="Dark_grad_lab" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1720, 330 )
-texture = SubResource( 10 )
+texture = SubResource( 11 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 2500, 2000 )
