@@ -14,9 +14,9 @@
 [sub_resource type="ShaderMaterial" id=3]
 shader = ExtResource( 5 )
 shader_param/blood_color = Vector3( 0.5, 0.05, 0.1 )
-shader_param/grey_intensity = 0.3
+shader_param/grey_intensity = 0.5
 shader_param/chromatic_intensity = 0.005
-shader_param/blur_base_radius = 15.0
+shader_param/blur_base_radius = 10.0
 shader_param/overall_intensity = 0.0
 shader_param/vessel = ExtResource( 6 )
 

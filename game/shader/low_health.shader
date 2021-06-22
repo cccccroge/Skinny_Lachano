@@ -49,7 +49,7 @@ vec4 blur_edge(sampler2D tex, vec2 uv, vec2 pixel_size, float intensity) {
 
 vec4 blood(float intensity, vec2 uv) {
 	vec4 vessel_col = texture(vessel, uv);
-	vec4 blood = vec4(intensity * blood_color.xyz * vessel_col.xyz * 1.5, 1.0);
+	vec4 blood = vec4(intensity * blood_color.xyz * vessel_col.xyz, 1.0);
 	return blood;
 }
 
