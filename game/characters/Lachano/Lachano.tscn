@@ -349,6 +349,8 @@ __meta__ = {
 "_edit_vertical_guides_": [ 959.619 ]
 }
 SPEED = 250
+LOWEST_SPEED = 120
+BONE_RATIO_CAUSE_SPEED_DROP = 0.8
 ANIM_SPEED_RATIO = 0.6
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
