@@ -2,7 +2,7 @@ shader_type canvas_item;
 
 uniform vec3 blood_color = vec3(0.5, 0.05, 0.1);
 uniform sampler2D vessel;
-uniform float grey_intensity = 0.3;
+uniform float grey_intensity = 0.45;
 uniform float chromatic_intensity = 0.005;
 uniform float blur_base_radius = 15.0;
 
@@ -35,26 +35,30 @@ vec4 shaked_chromatic_aberration(sampler2D tex, vec2 uv, float time, float ampli
 }
 
 vec4 blur_edge(sampler2D tex, vec2 uv, vec2 pixel_size, float intensity) {
+	float i = pow(intensity, 0.33);
+	float r = (1.0 / pixel_size.x) / 500f;
+	float radius = blur_base_radius * i * r;
+	
 	vec3 blur = vec3(0);
-	float radius = blur_base_radius * pow(intensity, 0.33);
 	blur += texture(tex, uv).rgb;
-    blur += texture(tex, uv + vec2(0, -radius) * pixel_size).rgb;
-    blur += texture(tex, uv + vec2(0, radius) * pixel_size).rgb;
-    blur += texture(tex, uv + vec2(-radius, 0) * pixel_size).rgb;
-    blur += texture(tex, uv + vec2(radius, 0) * pixel_size).rgb;
-    blur /= 5.0;
+	blur += texture(tex, uv + vec2(0, -radius) * pixel_size).rgb;
+	blur += texture(tex, uv + vec2(0, radius) * pixel_size).rgb;
+	blur += texture(tex, uv + vec2(-radius, 0) * pixel_size).rgb;
+	blur += texture(tex, uv + vec2(radius, 0) * pixel_size).rgb;
+	blur /= 5.0;
 	
 	return vec4(blur, 1.0);
 }
 
 vec4 blood(float intensity, vec2 uv) {
 	vec4 vessel_col = texture(vessel, uv);
+	vessel_col = 0.45 * vessel_col / (vec4(1.0) - vessel_col); // add contrast
 	vec4 blood = vec4(intensity * blood_color.xyz * vessel_col.xyz, 1.0);
 	return blood;
 }
 
 vec4 grey_scale(vec4 input_col, float _grey_intensity) {
-	float main_channel_i = 1.0 - _grey_intensity;
+	float main_channel_i = 1.0 - (2f / 3f * _grey_intensity);
 	float other_channel_i = (1.0 - main_channel_i) / 2.0;
 	return vec4(
 		input_col.r * main_channel_i + input_col.g * other_channel_i + input_col.b * other_channel_i,
