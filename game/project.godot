@@ -11,13 +11,14 @@ config_version=4
 [application]
 
 config/name="Skinny Lachano"
-run/main_scene="res://level01/Chapter1.tscn"
+run/main_scene="res://sandbox/GameplayTesting.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/width=1920
 window/size/height=1080
+window/size/fullscreen=true
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
@@ -71,5 +72,6 @@ translations=PoolStringArray( "res://ui/dialogue/texts/text.en.translation", "re
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 environment/default_clear_color=Color( 0.507813, 0.507813, 0.507813, 1 )
 environment/default_environment="res://default_env.tres"
